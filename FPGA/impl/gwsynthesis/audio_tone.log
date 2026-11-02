@@ -1,0 +1,113 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v":20)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v":20)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v":26)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v":26)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":18)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":18)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_note_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":36)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":36)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\piano_pedal_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_chord_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\audio_stop_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_song2.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":22)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":22)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\status_led.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_amp_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\pt8211_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\ttp229_reader.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\key_press_pulse.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\gowin_osc\gowin_osc.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snd_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\sine_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_driver.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\uart_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_protocol.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v":8)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v":8)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_keyboard.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_hid_zones.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_zones_snapshot.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll_mod.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\pll_init.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_piano_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_guitar_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_func_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_velocity_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_volume_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_octave_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\vib_sine_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":46)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":46)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_expression_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\bend_ratio_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_step_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_inc_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_state_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_rom_arbiter.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_ctx_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_ctx_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_defs.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":16)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":16)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_synth.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\uart_rx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_uart_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_event_fifo.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_ctrl_proto.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_audio_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\adc_filter_audio.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\filter_coeff_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\key_toggle.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\i2c_master.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\ads1115_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v'
+Compiling module 'rom_save_sin'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v":269)
+Compiling module 'sine_lut'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v":4)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v":5)
+NOTE  (EX0101) : Current top module is "rom_save_sin"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+[95%] Generate netlist file "E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\impl\gwsynthesis\audio_tone.vg" completed
+[100%] Generate report file "E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\impl\gwsynthesis\audio_tone_syn.rpt.html" completed
+GowinSynthesis finish

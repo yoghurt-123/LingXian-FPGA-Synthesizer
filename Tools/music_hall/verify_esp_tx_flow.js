@@ -1,0 +1,25 @@
+'use strict';
+const fs=require('fs');
+const src=fs.readFileSync('esp32/fpga_uart_bridge/fpga_uart_bridge.ino','utf8');
+const perf=fs.readFileSync('music_packs/rock_theme_3_full/score/performance.bin');
+let fail=0;function ok(c,m){if(!c){console.error('FAIL',m);fail++;}else console.log('OK',m);}
+ok(/bool sendSongEvent\(uint32_t idx\)/.test(src),'sendSongEvent returns bool');
+ok(!/beginMusicStreaming\s*\(/.test(src),'blocking beginMusicStreaming removed');
+ok(/requestMusicStart\(seq\)/.test(src),'PLAY enters requestMusicStart');
+ok(/requestMusicStop\(1, true, seq\)/.test(src),'STOP queues request with request seq');
+ok(/const uint8_t seq = musicStartSeq;/.test(src) && /sendMusicError\(seq, code\)/.test(src),'start errors echo request seq');
+ok(!/sendMusicError\(\s*0\s*,/.test(src),'no zero-seq start errors');
+ok(/kMusicStartTimeoutMs\s*=\s*3000/.test(src),'start timeout 3000 ms');
+ok(/kMusicStopTimeoutMs\s*=\s*2000/.test(src),'stop timeout 2000 ms');
+ok(/if \(!sendSongEvent\(musicNextEvent\)\)/.test(src),'preload checks event send result');
+ok((src.match(/musicNextEvent\+\+/g)||[]).length>=2,'event index advances explicitly');
+ok(!/sendSongEvent\(musicNextEvent\+\+\)/.test(src),'no post-increment on failed event');
+ok(!/\(void\)sendUartFrame\(0x33/.test(src),'STOP send result is not discarded');
+ok(/if \(sendUartFrame\(0x33, musicStopUartSeq, musicStopPayload, 5\)\)/.test(src),'STOP retries until UART accepts');
+ok(/sendMusicStatus\(musicStopSeq, 0, 0/.test(src),'STOP status only after accepted UART frame');
+ok(/sendMusicStatus\(musicStartSeq, 2, 0/.test(src),'PLAY status is ESP state 2');
+ok(perf.subarray(0,4).toString()==='FPGS','performance magic');
+const count=perf.readUInt32LE(16),dur=perf.readUInt32LE(20);ok(count===1404,'event count 1404');ok(perf.length===32+count*8,'performance length');
+let last=-1,prevType=0;for(let i=0;i<count;i++){const o=32+i*8,t=perf.readUInt32LE(o),ty=perf[o+4];if(t<last){ok(false,'event time order at '+i);break}last=t;if(ty<1||ty>8){ok(false,'event type at '+i);break}}ok(last<=dur,'last event <= duration');ok(last>=0,'event times monotonic');
+console.log(fail?'FAIL '+fail:'PASS ESP TX flow and event order');
+process.exit(fail?1:0);

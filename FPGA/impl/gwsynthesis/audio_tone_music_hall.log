@@ -1,0 +1,378 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v":20)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v":20)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v":26)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v":26)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\modal_do_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":18)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":18)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_note_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":36)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":36)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\piano_pedal_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_chord_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\audio_stop_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_song2.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":22)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":22)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\status_led.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_amp_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\pt8211_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\ttp229_reader.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\key_press_pulse.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\gowin_osc\gowin_osc.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snd_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\sine_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_driver.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\uart_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_protocol.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v":8)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v":8)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_keyboard.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_hid_zones.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_zones_snapshot.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll_mod.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\pll_init.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_piano_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_guitar_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_func_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_velocity_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_volume_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_octave_control.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\vib_sine_params.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":46)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":46)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_expression_keys.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\bend_ratio_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_step_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_inc_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_state_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_rom_arbiter.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_ctx_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_ctx_ram.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v'
+Analyzing included file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_defs.vh'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":16)
+Back to file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":16)
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_synth.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\uart_rx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_uart_tx.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_event_fifo.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_ctrl_proto.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_audio_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\adc_filter_audio.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\filter_coeff_rom.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\key_toggle.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\i2c_master.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\ads1115_ctrl.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v'
+Analyzing Verilog file 'E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v'
+Compiling module 'top'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":11)
+Compiling module 'Gowin_OSC'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\gowin_osc\gowin_osc.v":10)
+Compiling module 'usb_keyboard'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_keyboard.v":4)
+Compiling module 'Gowin_PLL'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll.v":1)
+Compiling module 'Gowin_PLL_MOD'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll_mod.v":11)
+Compiling module 'PLL_INIT'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\pll_init.v":4)
+Compiling module 'usb_hid_host'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":12)
+Compiling module 'ukp'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":177)
+Compiling module 'usb_hid_host_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host_rom.v":2)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host_rom.v":7)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 1("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":255)
+WARN  (EX3791) : Expression size 15 truncated to fit in target size 14("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":298)
+WARN  (EX3791) : Expression size 15 truncated to fit in target size 14("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":306)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":316)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":334)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 7("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":341)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":344)
+WARN  (EX3791) : Expression size 15 truncated to fit in target size 14("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":354)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":363)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v":142)
+Compiling module 'usb_zones_snapshot'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_zones_snapshot.v":5)
+Compiling module 'usb_hid_zones'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_hid_zones.v":5)
+Compiling module 'guitar_expression_keys'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_expression_keys.v":9)
+Compiling module 'usb_velocity_control'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_velocity_control.v":8)
+Compiling module 'usb_piano_keys'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_piano_keys.v":9)
+Compiling module 'usb_guitar_keys'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_guitar_keys.v":12)
+Compiling module 'usb_func_keys'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_func_keys.v":10)
+Compiling module 'status_led'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\status_led.v":4)
+Compiling module 'piano_pedal_ctrl'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\piano_pedal_ctrl.v":8)
+Compiling module 'ttp229_reader(POLL_CLKS=131250)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\ttp229_reader.v":9)
+Compiling module 'key_press_pulse(PRESS_CLKS=157500)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\key_press_pulse.v":7)
+Compiling module 'ble_ctrl_proto'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_ctrl_proto.v":1)
+Compiling module 'uart_rx'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\uart_rx.v":1)
+Compiling module 'ble_uart_tx'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_uart_tx.v":1)
+WARN  (EX1998) : Net 'tx_frame[12][7]' does not have a driver("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_ctrl_proto.v":69)
+Compiling module 'song_scheduler'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v":4)
+Extracting RAM for identifier 'qmem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v":23)
+WARN  (EX3791) : Expression size 8 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v":129)
+WARN  (EX3834) : Case condition never applies("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v":172)
+Compiling module 'ble_event_fifo'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_event_fifo.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_event_fifo.v":19)
+Compiling module 'ble_audio_ctrl'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_audio_ctrl.v":1)
+Compiling module 'guitar_chord_engine'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_chord_engine.v":5)
+Extracting RAM for identifier 'fifo'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_chord_engine.v":40)
+Compiling module 'demo_player2'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":6)
+Extracting RAM for identifier 'ev_mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v":39)
+Compiling module 'guitar_ctrl'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_ctrl.v":13)
+Compiling module 'pitch_bend_ctrl'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":18)
+WARN  (EX3791) : Expression size 15 truncated to fit in target size 14("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":126)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 11("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":169)
+Compiling module 'bend_ratio_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\bend_ratio_rom.v":4)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\bend_ratio_rom.v":9)
+WARN  (EX3791) : Expression size 11 truncated to fit in target size 10("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v":311)
+Compiling module 'guitar_voice'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":8)
+Extracting RAM for identifier 'phase_mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":38)
+Extracting RAM for identifier 'amp'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":41)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":63)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":135)
+Compiling module 'guitar_step_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_step_rom.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_step_rom.v":8)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 19("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":161)
+Compiling module 'sine_lut'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v":4)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v":5)
+WARN  (EX3791) : Expression size 27 truncated to fit in target size 26("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":284)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 18("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":295)
+WARN  (EX3791) : Expression size 17 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":296)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":387)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":388)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":389)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":390)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":391)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 21("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":392)
+WARN  (EX3791) : Expression size 38 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":396)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":397)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":398)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":399)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v":400)
+Compiling module 'guitar_fx'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":3)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":68)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":82)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":106)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":115)
+WARN  (EX3791) : Expression size 24 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":142)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v":143)
+Compiling module 'guitar_reverb'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":6)
+Extracting RAM for identifier 'cb0'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":22)
+Extracting RAM for identifier 'cb1'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":23)
+Extracting RAM for identifier 'cb2'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":24)
+Extracting RAM for identifier 'cb3'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":25)
+Extracting RAM for identifier 'ab0'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":26)
+Extracting RAM for identifier 'ab1'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v":27)
+Compiling module 'piano_modal_group4_shared'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":12)
+Compiling module 'piano_modal_shared_core'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":4)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":88)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":95)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":97)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 20("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":260)
+WARN  (EX3791) : Expression size 38 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":264)
+Compiling module 'piano_modal_group4_shared(N0=4,N1=5,N2=6,N3=7)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":12)
+Compiling module 'piano_modal_shared_core(N0=4,N1=5,N2=6,N3=7)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":4)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":88)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":95)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":97)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 20("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":260)
+WARN  (EX3791) : Expression size 38 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":264)
+Compiling module 'piano_modal_group4_shared(N0=8,N1=9,N2=10,N3=11)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":12)
+Compiling module 'piano_modal_shared_core(N0=8,N1=9,N2=10,N3=11)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":4)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":88)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":95)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":97)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 20("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":260)
+WARN  (EX3791) : Expression size 38 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":264)
+Compiling module 'piano_modal_group4_shared(N0=12,N1=13,N2=14,N3=15)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v":12)
+Compiling module 'piano_modal_shared_core(N0=12,N1=13,N2=14,N3=15)'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":4)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":88)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":95)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 17("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":97)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 20("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":260)
+WARN  (EX3791) : Expression size 38 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v":264)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":644)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":645)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":646)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":647)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":648)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":649)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":650)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":651)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":652)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":653)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":654)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":655)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":656)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":657)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":658)
+WARN  (EX3791) : Expression size 28 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v":659)
+Compiling module 'drum_synth3'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":4)
+Compiling module 'kick_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":2)
+Extracting RAM for identifier 'ma'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":3)
+Extracting RAM for identifier 'md'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":3)
+Extracting RAM for identifier 'mi'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":3)
+Compiling module 'kick_phi_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":3592)
+Extracting RAM for identifier 'm'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v":3593)
+Compiling module 'snd_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snd_rom.v":2)
+Extracting RAM for identifier 'm'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snd_rom.v":3)
+Compiling module 'sine_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\sine_rom.v":2)
+Extracting RAM for identifier 'm'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\sine_rom.v":3)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":114)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":121)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":128)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":144)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":151)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":161)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":163)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":164)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":179)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":187)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":192)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":201)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":204)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":206)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":226)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":226)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":232)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":232)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":253)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":254)
+WARN  (EX3791) : Expression size 29 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":255)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v":257)
+Compiling module 'snare_tv_engine'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":3)
+Compiling module 'snare_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":2)
+Extracting RAM for identifier 'q0'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":3)
+Extracting RAM for identifier 'q1'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":3)
+WARN  (EX3791) : Expression size 36 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":3847)
+Compiling module 'snare_phi_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":3850)
+Extracting RAM for identifier 'm'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v":3851)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":72)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":82)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":88)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":92)
+WARN  (EX3791) : Expression size 14 truncated to fit in target size 12("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":97)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":110)
+WARN  (EX3791) : Expression size 10 truncated to fit in target size 9("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":112)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":113)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":119)
+WARN  (EX3791) : Expression size 6 truncated to fit in target size 5("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v":128)
+Compiling module 'six_drum_synth'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_synth.v":3)
+Compiling module 'six_drum_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_rom.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_rom.v":6)
+Compiling module 'six_rom_arbiter'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_rom_arbiter.v":1)
+Compiling module 'six_state_ram'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_state_ram.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_state_ram.v":9)
+Compiling module 'six_modal_engine'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":2)
+Compiling module 'six_inc_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_inc_rom.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_inc_rom.v":6)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":69)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":70)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":73)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":74)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":116)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":161)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":162)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":167)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":233)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":298)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v":318)
+Compiling module 'six_noise_engine'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":2)
+Compiling module 'six_noise_ctx_ram'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_ctx_ram.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_ctx_ram.v":8)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 13("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":66)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":87)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":88)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":89)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":90)
+WARN  (EX3791) : Expression size 49 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":100)
+WARN  (EX3791) : Expression size 16 truncated to fit in target size 13("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":245)
+WARN  (EX3791) : Expression size 5 truncated to fit in target size 4("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":257)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":268)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":269)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":270)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":271)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 48("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":314)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 48("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":315)
+WARN  (EX3791) : Expression size 64 truncated to fit in target size 48("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v":316)
+Compiling module 'six_tom_engine'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":1)
+Compiling module 'six_tom_ctx_ram'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_ctx_ram.v":1)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_ctx_ram.v":8)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":155)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":156)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":317)
+WARN  (EX3791) : Expression size 3 truncated to fit in target size 2("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":395)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":509)
+WARN  (EX3791) : Expression size 15 truncated to fit in target size 13("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":545)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":664)
+WARN  (EX3791) : Expression size 40 truncated to fit in target size 24("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v":668)
+Compiling module 'audio_stop_control'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\audio_stop_control.v":12)
+Compiling module 'usb_volume_control'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_volume_control.v":9)
+Compiling module 'usb_octave_control'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_octave_control.v":7)
+Compiling module 'key_toggle'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\key_toggle.v":3)
+Compiling module 'adc_param_bridge'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v":5)
+Compiling module 'i2c_master'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\i2c_master.v":4)
+Compiling module 'ads1115_ctrl'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\ads1115_ctrl.v":4)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v":93)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v":96)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v":99)
+WARN  (EX3791) : Expression size 19 truncated to fit in target size 18("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v":102)
+Compiling module 'adc_filter_audio'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\adc_filter_audio.v":5)
+Compiling module 'filter_coeff_rom'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\filter_coeff_rom.v":3)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\filter_coeff_rom.v":4)
+Compiling module 'audio_echo'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v":4)
+Extracting RAM for identifier 'mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v":31)
+WARN  (EX3791) : Expression size 36 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v":62)
+Compiling module 'audio_drive'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_driver.v":3)
+Compiling module 'pt8211_tx'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\pt8211_tx.v":7)
+Compiling module 'audio_amp_control'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_amp_control.v":4)
+Compiling module 'vofa_uart'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v":3)
+Compiling module 'uart_tx'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\uart_tx.v":1)
+Compiling module 'usb_visualizer'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":1)
+Extracting RAM for identifier 'samp_mem'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":26)
+Extracting RAM for identifier 'wave_snap'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":27)
+Extracting RAM for identifier 'spec_snap'("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":28)
+WARN  (EX3791) : Expression size 48 truncated to fit in target size 32("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":162)
+WARN  (EX3791) : Expression size 9 truncated to fit in target size 8("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":176)
+WARN  (EX3791) : Expression size 23 truncated to fit in target size 16("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v":299)
+NOTE  (EX0101) : Current top module is "top"
+[5%] Running netlist conversion ...
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "usb_hid_zones" instantiated to "u_dec" is swept in optimizing("E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_zones_snapshot.v":19)
+[95%] Generate netlist file "E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\impl\gwsynthesis\audio_tone_music_hall.vg" completed
+[100%] Generate report file "E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\impl\gwsynthesis\audio_tone_music_hall_syn.rpt.html" completed
+GowinSynthesis finish

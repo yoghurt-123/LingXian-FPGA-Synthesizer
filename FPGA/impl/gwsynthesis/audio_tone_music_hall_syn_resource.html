@@ -1,0 +1,1026 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Hierarchy Module Resource</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 14px; }
+div#main_wrapper{ width: 100%; }
+h1 {text-align: center; }
+h1 {margin-top: 36px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { align = "center"; padding: 5px 2px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table td.label { width: 20%; white-space: nowrap; min-width: 20px; background-color: #dee8f4; }
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="content">
+<h1>Hierarchy Module Resource</h1>
+<table>
+<tr>
+<th class="label">MODULE NAME</th>
+<th class="label">REG NUMBER</th>
+<th class="label">ALU NUMBER</th>
+<th class="label">LUT NUMBER</th>
+<th class="label">DSP NUMBER</th>
+<th class="label">BSRAM NUMBER</th>
+<th class="label">SSRAM NUMBER</th>
+<th class="label">ROM16 NUMBER</th>
+</tr>
+<tr>
+<td class="label">top (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">204</td>
+<td align = "center">779</td>
+<td align = "center">370</td>
+<td align = "center">19</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_osc
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_keyboard
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">21</td>
+<td align = "center">15</td>
+<td align = "center">73</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_pll
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_pll
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_pll_init
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v)</td>
+<td align = "center">101</td>
+<td align = "center">18</td>
+<td align = "center">154</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_host
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v)</td>
+<td align = "center">99</td>
+<td align = "center">-</td>
+<td align = "center">67</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ukp
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v)</td>
+<td align = "center">149</td>
+<td align = "center">43</td>
+<td align = "center">201</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ukprom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_zones
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v)</td>
+<td align = "center">224</td>
+<td align = "center">74</td>
+<td align = "center">448</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_expr
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">43</td>
+<td align = "center">5</td>
+<td align = "center">82</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_velocity
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_piano_keys
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">35</td>
+<td align = "center">-</td>
+<td align = "center">23</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_guitar_keys
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">17</td>
+<td align = "center">-</td>
+<td align = "center">11</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_func_keys
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_status_led
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">33</td>
+<td align = "center">-</td>
+<td align = "center">72</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_pedal
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">50</td>
+<td align = "center">-</td>
+<td align = "center">36</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">73</td>
+<td align = "center">-</td>
+<td align = "center">106</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key1
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key2
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key3
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key4
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key5
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key6
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key7
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key9
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key10
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key11
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key12
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key13
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key14
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key15
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key16
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_ble_ctrl
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">347</td>
+<td align = "center">10</td>
+<td align = "center">228</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_rx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v)</td>
+<td align = "center">34</td>
+<td align = "center">-</td>
+<td align = "center">43</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_tx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">41</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_song_sched
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">176</td>
+<td align = "center">133</td>
+<td align = "center">297</td>
+<td align = "center">-</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_ble_fifo
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">422</td>
+<td align = "center">5</td>
+<td align = "center">240</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_ble_audio
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">212</td>
+<td align = "center">-</td>
+<td align = "center">385</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_chord
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">95</td>
+<td align = "center">6</td>
+<td align = "center">144</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_demo2
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">91</td>
+<td align = "center">18</td>
+<td align = "center">153</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_gtr_ctrl
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">157</td>
+<td align = "center">-</td>
+<td align = "center">298</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_pitch_bend
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">1143</td>
+<td align = "center">370</td>
+<td align = "center">2170</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_rom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/pitch_bend_ctrl.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_guitar
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">715</td>
+<td align = "center">523</td>
+<td align = "center">4198</td>
+<td align = "center">7</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_step_rom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sine
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_gtr_fx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">193</td>
+<td align = "center">218</td>
+<td align = "center">521</td>
+<td align = "center">12</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_gtr_rev
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">228</td>
+<td align = "center">618</td>
+<td align = "center">488</td>
+<td align = "center">-</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_piano_g0
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_core
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">1970</td>
+<td align = "center">182</td>
+<td align = "center">2472</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sine
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_touch_key8
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_piano_g1
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_core
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">1970</td>
+<td align = "center">183</td>
+<td align = "center">2480</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sine
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_piano_g2
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_core
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">1970</td>
+<td align = "center">182</td>
+<td align = "center">2457</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sine
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_piano_g3
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">15</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_core
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">1970</td>
+<td align = "center">182</td>
+<td align = "center">2464</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sine
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_drum
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">1569</td>
+<td align = "center">251</td>
+<td align = "center">2214</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_krom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">20</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_kphi
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v)</td>
+<td align = "center">32</td>
+<td align = "center">-</td>
+<td align = "center">32</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_srom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sin
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_snare
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">853</td>
+<td align = "center">76</td>
+<td align = "center">1016</td>
+<td align = "center">3</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_rom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">18</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_phi
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v)</td>
+<td align = "center">32</td>
+<td align = "center">-</td>
+<td align = "center">32</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_sin
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_six
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">32</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--urom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">8</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--uarb
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">34</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ustate
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--usin
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--um
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">666</td>
+<td align = "center">277</td>
+<td align = "center">1166</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--uinc
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_modal_engine.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--un
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">1086</td>
+<td align = "center">763</td>
+<td align = "center">1624</td>
+<td align = "center">9</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--unctx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_engine.v)</td>
+<td align = "center">39</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--ut
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v)</td>
+<td align = "center">1511</td>
+<td align = "center">564</td>
+<td align = "center">3847</td>
+<td align = "center">7</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--uctx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_engine.v)</td>
+<td align = "center">41</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_stop_ctl
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">40</td>
+<td align = "center">-</td>
+<td align = "center">100</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_volume
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">52</td>
+<td align = "center">73</td>
+<td align = "center">103</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_usb_octave
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">5</td>
+<td align = "center">-</td>
+<td align = "center">6</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_filter_key
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">25</td>
+<td align = "center">-</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_adc_params
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">212</td>
+<td align = "center">144</td>
+<td align = "center">390</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_i2c
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v)</td>
+<td align = "center">55</td>
+<td align = "center">-</td>
+<td align = "center">131</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_adc
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v)</td>
+<td align = "center">215</td>
+<td align = "center">-</td>
+<td align = "center">316</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_adc_filter
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">269</td>
+<td align = "center">164</td>
+<td align = "center">499</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_rom
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/adc_filter_audio.v)</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">1</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_echo
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">128</td>
+<td align = "center">117</td>
+<td align = "center">317</td>
+<td align = "center">-</td>
+<td align = "center">4</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_audio
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_tx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_driver.v)</td>
+<td align = "center">39</td>
+<td align = "center">-</td>
+<td align = "center">45</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_amp
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">24</td>
+<td align = "center">22</td>
+<td align = "center">10</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_vofa
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">22</td>
+<td align = "center">-</td>
+<td align = "center">40</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_tx
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/vofa_uart.v)</td>
+<td align = "center">21</td>
+<td align = "center">-</td>
+<td align = "center">42</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp|--u_visualizer
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v)</td>
+<td align = "center">451</td>
+<td align = "center">307</td>
+<td align = "center">725</td>
+<td align = "center">6</td>
+<td align = "center">2</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp|--u_uart
+ (E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/visualizer/usb_visualizer.v)</td>
+<td align = "center">30</td>
+<td align = "center">-</td>
+<td align = "center">51</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+<td align = "center">-</td>
+</tr>
+</table>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>

@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "generated": "2026-10-27",
+  "channel": {
+    "kind": "static-local-and-lan",
+    "public_url": null,
+    "note": "Local/LAN static channel only; no public URL is claimed. Files may also be imported directly."
+  },
+  "songs": [
+    {
+      "song_id": "fight-for-better-future-cc0",
+      "title": "Fight for Better Future [Rock/Metal]",
+      "composer": "nene",
+      "license": "CC0-1.0",
+      "source_url": "https://opengameart.org/content/fight-for-better-future-rockmetal",
+      "duration_seconds": 68.12890209523809,
+      "event_count": 2669,
+      "file": "fight_for_better_future.fpgasong",
+      "relative_path": "music_packs/fight_for_better_future.fpgasong",
+      "bytes": 26015,
+      "sha256": "37e6c6f19e759ade667edb48ad011fe3e387ee2442f389d1c6caa77ec6053068",
+      "cover": null,
+      "capabilities_required": [
+        "piano",
+        "guitar-pluck",
+        "drums",
+        "timed-event-queue",
+        "bulk-song-transfer",
+        "song-owned-stop"
+      ],
+      "minimum": {
+        "protocol": "music-hall-v1",
+        "fpga_protocol_version": 3
+      }
+    },
+    {
+      "song_id": "rock-music-0-cc0",
+      "title": "Rock Music",
+      "composer": "Umplix",
+      "license": "CC0-1.0",
+      "source_url": "https://opengameart.org/content/rock-music-0",
+      "duration_seconds": 32.00000731428571,
+      "event_count": 207,
+      "file": "rock_music_0.fpgasong",
+      "relative_path": "music_packs/rock_music_0.fpgasong",
+      "bytes": 7586,
+      "sha256": "8e97d9d3071661e241ef277f083fdf2974f2ffa5f9f30255f039f39c108b53bb",
+      "cover": null,
+      "capabilities_required": [
+        "guitar-pluck",
+        "drums",
+        "timed-event-queue",
+        "bulk-song-transfer",
+        "song-owned-stop"
+      ],
+      "minimum": {
+        "protocol": "music-hall-v1",
+        "fpga_protocol_version": 3
+      }
+    },
+    {
+      "song_id": "rock-theme-3-full-cc0",
+      "title": "Rock Theme 3 — full song",
+      "composer": "Umplix",
+      "license": "CC0-1.0",
+      "source_url": "https://opengameart.org/content/rock-theme-3",
+      "duration_seconds": 64.98750415238095,
+      "event_count": 1404,
+      "file": "rock_theme_3_full.fpgasong",
+      "relative_path": "music_packs/rock_theme_3_full.fpgasong",
+      "bytes": 17681,
+      "sha256": "893f01477b0bbdf117e24ff9b55abf25518b48c4697d8eaee48af59276e2871a",
+      "cover": null,
+      "minimum": {
+        "protocol": "music-hall-v1",
+        "fpga_protocol_version": 3
+      }
+    }
+  ]
+}

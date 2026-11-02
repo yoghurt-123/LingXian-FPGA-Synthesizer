@@ -1,0 +1,129 @@
+{
+  "protocol": "music-hall-v1",
+  "fpga_protocol_version": 3,
+  "generated": "2026-10-27",
+  "crc8": {
+    "poly": "0x07",
+    "init": "0x00",
+    "coverage": "UART and BLE: TYPE,SEQ,LEN,PAYLOAD; E2/header excluded"
+  },
+  "begin": {
+    "bytes": 40,
+    "layout": [
+      "session32",
+      "total_bytes32",
+      "performance_sha256[32]"
+    ],
+    "sha_semantics": "SHA-256 over performance.bin bytes only; BEGIN binds the expected digest; COMMIT must equal it and is authoritative for received bytes; package ZIP is not hashed here"
+  },
+  "performance": {
+    "bytes": 11264,
+    "event_count": 1404,
+    "duration_samples": 3135886,
+    "sha256": "23c822e15d0d3d35d678f37dcbc3f14a999ca111557f82a14b7188d5895b7737",
+    "first_event_hex": "0000000001040c20"
+  },
+  "frames": [
+    {
+      "name": "BLE CAPS_REQ",
+      "type": "0x01",
+      "seq": 0,
+      "payload_len": 0,
+      "hex": "e20100006b",
+      "crc8": 107,
+      "notes": "CRC covers TYPE SEQ LEN PAYLOAD"
+    },
+    {
+      "name": "BLE CAPS_RSP",
+      "type": "0x81",
+      "seq": 0,
+      "payload_len": 9,
+      "hex": "e281000903ffff0300000001004c",
+      "crc8": 76,
+      "notes": "expected CRC 0x4c for seq 0; payload version=3 caps=0x0003ffff max=65536"
+    },
+    {
+      "name": "BLE BEGIN 40",
+      "type": "0x10",
+      "seq": 1,
+      "payload_len": 40,
+      "hex": "e210012844332211002c000023c822e15d0d3d35d678f37dcbc3f14a999ca111557f82a14b7188d5895b77376e",
+      "crc8": 110,
+      "notes": "session32 total32 performance_sha256[32]"
+    },
+    {
+      "name": "BLE DATA first",
+      "type": "0x11",
+      "seq": 2,
+      "payload_len": 12,
+      "hex": "e211020c000000000000000001040c205a",
+      "crc8": 90
+    },
+    {
+      "name": "BLE COMMIT",
+      "type": "0x12",
+      "seq": 2,
+      "payload_len": 32,
+      "hex": "e212022023c822e15d0d3d35d678f37dcbc3f14a999ca111557f82a14b7188d5895b7737c3",
+      "crc8": 195,
+      "notes": "same SHA-256 as BEGIN"
+    },
+    {
+      "name": "BLE STATUS",
+      "type": "0x96",
+      "seq": 1,
+      "payload_len": 10,
+      "hex": "e296010a010000000000002c0000b5",
+      "crc8": 181
+    },
+    {
+      "name": "BLE ERROR",
+      "type": "0x97",
+      "seq": 3,
+      "payload_len": 1,
+      "hex": "e297030108a4",
+      "crc8": 164
+    },
+    {
+      "name": "BLE STOP",
+      "type": "0x15",
+      "seq": 4,
+      "payload_len": 1,
+      "hex": "e21504010190",
+      "crc8": 144
+    },
+    {
+      "name": "UART SONG_BEGIN",
+      "hex": "a55a300110443322117c0500008ed92f000000000068",
+      "length": 22,
+      "crc8": 104
+    },
+    {
+      "name": "UART SONG_PLAY",
+      "hex": "a55a32020c443322113f5e0000000000008f",
+      "length": 18,
+      "crc8": 143
+    },
+    {
+      "name": "UART SONG_EVENT(first)",
+      "hex": "a55a3103080000000001040c20d9",
+      "length": 14,
+      "crc8": 217
+    },
+    {
+      "name": "UART SONG_STOP",
+      "hex": "a55a330405443322110190",
+      "length": 11,
+      "crc8": 144
+    },
+    {
+      "name": "BLE PLAY_STATUS",
+      "type": "0x96",
+      "seq": 5,
+      "payload_len": 10,
+      "hex": "e296050a0200002c0000002c000040",
+      "crc8": 64,
+      "notes": "ESP transport state 2 = PLAY accepted/streaming; NOT FPGA execution acknowledgement; seq echoes PLAY request"
+    }
+  ]
+}

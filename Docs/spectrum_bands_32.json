@@ -1,0 +1,172 @@
+﻿{
+    "version":  1,
+    "message":  "spectrum-band-centers",
+    "sample_rate_hz":  48254,
+    "window_samples":  512,
+    "window_ms":  10.61,
+    "fft_resolution_hz":  94.2,
+    "analysis":  "Goertzel",
+    "amplitude":  "0..255 log-magnitude-like level from signed Goertzel power",
+    "bands":  [
+                  {
+                      "band":  0,
+                      "k":  1,
+                      "center_hz":  94.2
+                  },
+                  {
+                      "band":  1,
+                      "k":  2,
+                      "center_hz":  188.5
+                  },
+                  {
+                      "band":  2,
+                      "k":  3,
+                      "center_hz":  282.7
+                  },
+                  {
+                      "band":  3,
+                      "k":  4,
+                      "center_hz":  377
+                  },
+                  {
+                      "band":  4,
+                      "k":  5,
+                      "center_hz":  471.2
+                  },
+                  {
+                      "band":  5,
+                      "k":  6,
+                      "center_hz":  565.5
+                  },
+                  {
+                      "band":  6,
+                      "k":  7,
+                      "center_hz":  659.7
+                  },
+                  {
+                      "band":  7,
+                      "k":  8,
+                      "center_hz":  754
+                  },
+                  {
+                      "band":  8,
+                      "k":  9,
+                      "center_hz":  848.2
+                  },
+                  {
+                      "band":  9,
+                      "k":  10,
+                      "center_hz":  942.5
+                  },
+                  {
+                      "band":  10,
+                      "k":  11,
+                      "center_hz":  1036.7
+                  },
+                  {
+                      "band":  11,
+                      "k":  12,
+                      "center_hz":  1130.9
+                  },
+                  {
+                      "band":  12,
+                      "k":  13,
+                      "center_hz":  1225.2
+                  },
+                  {
+                      "band":  13,
+                      "k":  15,
+                      "center_hz":  1413.7
+                  },
+                  {
+                      "band":  14,
+                      "k":  17,
+                      "center_hz":  1602.2
+                  },
+                  {
+                      "band":  15,
+                      "k":  19,
+                      "center_hz":  1790.7
+                  },
+                  {
+                      "band":  16,
+                      "k":  22,
+                      "center_hz":  2073.4
+                  },
+                  {
+                      "band":  17,
+                      "k":  25,
+                      "center_hz":  2356.1
+                  },
+                  {
+                      "band":  18,
+                      "k":  29,
+                      "center_hz":  2733.1
+                  },
+                  {
+                      "band":  19,
+                      "k":  33,
+                      "center_hz":  3110.1
+                  },
+                  {
+                      "band":  20,
+                      "k":  38,
+                      "center_hz":  3581.3
+                  },
+                  {
+                      "band":  21,
+                      "k":  44,
+                      "center_hz":  4146.8
+                  },
+                  {
+                      "band":  22,
+                      "k":  51,
+                      "center_hz":  4806.5
+                  },
+                  {
+                      "band":  23,
+                      "k":  59,
+                      "center_hz":  5560.5
+                  },
+                  {
+                      "band":  24,
+                      "k":  68,
+                      "center_hz":  6408.7
+                  },
+                  {
+                      "band":  25,
+                      "k":  79,
+                      "center_hz":  7445.4
+                  },
+                  {
+                      "band":  26,
+                      "k":  92,
+                      "center_hz":  8670.6
+                  },
+                  {
+                      "band":  27,
+                      "k":  107,
+                      "center_hz":  10084.3
+                  },
+                  {
+                      "band":  28,
+                      "k":  124,
+                      "center_hz":  11686.4
+                  },
+                  {
+                      "band":  29,
+                      "k":  144,
+                      "center_hz":  13571.3
+                  },
+                  {
+                      "band":  30,
+                      "k":  167,
+                      "center_hz":  15739
+                  },
+                  {
+                      "band":  31,
+                      "k":  194,
+                      "center_hz":  18283.6
+                  }
+              ]
+}

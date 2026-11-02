@@ -1,0 +1,301 @@
+{
+    "Device": "GW5AT-60B",
+    "Files": [
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_fx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/audio_echo.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_reverb.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_ctrl.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/piano_pedal_ctrl.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_chord_engine.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/audio_stop_control.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/demo_player2.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/status_led.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_amp_control.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/pt8211_tx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/ttp229_reader.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/gowin_osc/gowin_osc.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/visualizer/usb_visualizer.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/kick_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snd_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/sine_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_driver.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/uart_tx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/vofa_uart.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_hid_zones.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_zones_snapshot.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll_mod.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/pll_init.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_piano_keys.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_guitar_keys.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_func_keys.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_velocity_control.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_volume_control.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_octave_control.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/pitch_bend_ctrl.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_expression_keys.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/bend_ratio_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_step_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_inc_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_state_ram.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_rom_arbiter.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_modal_engine.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_ctx_ram.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_engine.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_ctx_ram.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_engine.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/uart_rx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_uart_tx.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_event_fifo.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_audio_ctrl.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/adc_filter_audio.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/filter_coeff_rom.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/key_toggle.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/i2c_master.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/ads1115_ctrl.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v",
+            "Type": "verilog"
+        },
+        {
+            "Path": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/music/song_scheduler.v",
+            "Type": "verilog"
+        }
+    ],
+    "IncludePath": [
+        "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/music"
+    ],
+    "LoopLimit": 2000,
+    "ResultFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/impl/temp/rtl_parser.result",
+    "Top": "top",
+    "VerilogStd": "verilog_2001",
+    "VhdlStd": "vhdl_93"
+}

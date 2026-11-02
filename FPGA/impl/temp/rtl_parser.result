@@ -1,0 +1,968 @@
+[
+    {
+        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice.v",
+        "InstLine": 7,
+        "InstName": "piano_modal_voice",
+        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice.v",
+        "ModuleLine": 7,
+        "ModuleName": "piano_modal_voice",
+        "SubInsts": [
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice.v",
+                "InstLine": 113,
+                "InstName": "u_sine",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                "ModuleLine": 4,
+                "ModuleName": "sine_lut"
+            }
+        ]
+    },
+    {
+        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+        "InstLine": 5,
+        "InstName": "piano_modal_group4",
+        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+        "ModuleLine": 5,
+        "ModuleName": "piano_modal_group4",
+        "SubInsts": [
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+                "InstLine": 32,
+                "InstName": "u0",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                "ModuleLine": 7,
+                "ModuleName": "piano_modal_voice_core",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                        "InstLine": 121,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+                "InstLine": 38,
+                "InstName": "u1",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                "ModuleLine": 7,
+                "ModuleName": "piano_modal_voice_core",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                        "InstLine": 121,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+                "InstLine": 44,
+                "InstName": "u2",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                "ModuleLine": 7,
+                "ModuleName": "piano_modal_voice_core",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                        "InstLine": 121,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v",
+                "InstLine": 50,
+                "InstName": "u3",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                "ModuleLine": 7,
+                "ModuleName": "piano_modal_voice_core",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v",
+                        "InstLine": 121,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+        "InstLine": 11,
+        "InstName": "top",
+        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+        "ModuleLine": 11,
+        "ModuleName": "top",
+        "SubInsts": [
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 37,
+                "InstName": "u_osc",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/gowin_osc/gowin_osc.v",
+                "ModuleLine": 10,
+                "ModuleName": "Gowin_OSC"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 100,
+                "InstName": "u_usb_keyboard",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v",
+                "ModuleLine": 4,
+                "ModuleName": "usb_keyboard",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v",
+                        "InstLine": 14,
+                        "InstName": "u_pll",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "Gowin_PLL",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v",
+                                "InstLine": 24,
+                                "InstName": "u_pll",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll_mod.v",
+                                "ModuleLine": 11,
+                                "ModuleName": "Gowin_PLL_MOD"
+                            },
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v",
+                                "InstLine": 37,
+                                "InstName": "u_pll_init",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/pll_init.v",
+                                "ModuleLine": 4,
+                                "ModuleName": "PLL_INIT"
+                            }
+                        ]
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v",
+                        "InstLine": 29,
+                        "InstName": "u_host",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v",
+                        "ModuleLine": 12,
+                        "ModuleName": "usb_hid_host",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v",
+                                "InstLine": 48,
+                                "InstName": "ukp",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v",
+                                "ModuleLine": 177,
+                                "ModuleName": "ukp",
+                                "SubInsts": [
+                                    {
+                                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v",
+                                        "InstLine": 239,
+                                        "InstName": "ukprom",
+                                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host_rom.v",
+                                        "ModuleLine": 2,
+                                        "ModuleName": "usb_hid_host_rom"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v",
+                        "InstLine": 38,
+                        "InstName": "u_zones",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_zones_snapshot.v",
+                        "ModuleLine": 5,
+                        "ModuleName": "usb_zones_snapshot",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_zones_snapshot.v",
+                                "InstLine": 15,
+                                "InstName": "u_dec",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_hid_zones.v",
+                                "ModuleLine": 5,
+                                "ModuleName": "usb_hid_zones"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 108,
+                "InstName": "u_expr",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_expression_keys.v",
+                "ModuleLine": 9,
+                "ModuleName": "guitar_expression_keys"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 114,
+                "InstName": "u_usb_velocity",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_velocity_control.v",
+                "ModuleLine": 8,
+                "ModuleName": "usb_velocity_control"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 119,
+                "InstName": "u_usb_piano_keys",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_piano_keys.v",
+                "ModuleLine": 9,
+                "ModuleName": "usb_piano_keys"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 125,
+                "InstName": "u_usb_guitar_keys",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_guitar_keys.v",
+                "ModuleLine": 12,
+                "ModuleName": "usb_guitar_keys"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 130,
+                "InstName": "u_usb_func_keys",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_func_keys.v",
+                "ModuleLine": 10,
+                "ModuleName": "usb_func_keys"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 137,
+                "InstName": "u_status_led",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/status_led.v",
+                "ModuleLine": 4,
+                "ModuleName": "status_led"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 140,
+                "InstName": "u_pedal",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/piano_pedal_ctrl.v",
+                "ModuleLine": 8,
+                "ModuleName": "piano_pedal_ctrl"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 159,
+                "InstName": "u_touch",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/ttp229_reader.v",
+                "ModuleLine": 9,
+                "ModuleName": "ttp229_reader"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 167,
+                "InstName": "u_touch_key1",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 170,
+                "InstName": "u_touch_key2",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 173,
+                "InstName": "u_touch_key3",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 176,
+                "InstName": "u_touch_key4",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 179,
+                "InstName": "u_touch_key5",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 182,
+                "InstName": "u_touch_key6",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 185,
+                "InstName": "u_touch_key7",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 191,
+                "InstName": "u_touch_key9",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 196,
+                "InstName": "u_touch_key10",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 199,
+                "InstName": "u_touch_key11",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 204,
+                "InstName": "u_touch_key12",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 207,
+                "InstName": "u_touch_key13",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 210,
+                "InstName": "u_touch_key14",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 215,
+                "InstName": "u_touch_key15",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 218,
+                "InstName": "u_touch_key16",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 255,
+                "InstName": "u_ble_ctrl",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v",
+                "ModuleLine": 1,
+                "ModuleName": "ble_ctrl_proto",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v",
+                        "InstLine": 37,
+                        "InstName": "u_rx",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/uart_rx.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "uart_rx"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v",
+                        "InstLine": 45,
+                        "InstName": "u_tx",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_uart_tx.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "ble_uart_tx"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 270,
+                "InstName": "u_song_sched",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/music/song_scheduler.v",
+                "ModuleLine": 4,
+                "ModuleName": "song_scheduler"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 281,
+                "InstName": "u_ble_fifo",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_event_fifo.v",
+                "ModuleLine": 1,
+                "ModuleName": "ble_event_fifo"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 287,
+                "InstName": "u_ble_audio",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_audio_ctrl.v",
+                "ModuleLine": 1,
+                "ModuleName": "ble_audio_ctrl"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 378,
+                "InstName": "u_chord",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_chord_engine.v",
+                "ModuleLine": 5,
+                "ModuleName": "guitar_chord_engine"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 396,
+                "InstName": "u_demo2",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/demo_player2.v",
+                "ModuleLine": 6,
+                "ModuleName": "demo_player2"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 408,
+                "InstName": "u_gtr_ctrl",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_ctrl.v",
+                "ModuleLine": 13,
+                "ModuleName": "guitar_ctrl"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 467,
+                "InstName": "u_pitch_bend",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/pitch_bend_ctrl.v",
+                "ModuleLine": 18,
+                "ModuleName": "pitch_bend_ctrl",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/pitch_bend_ctrl.v",
+                        "InstLine": 184,
+                        "InstName": "u_rom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/bend_ratio_rom.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "bend_ratio_rom"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 475,
+                "InstName": "u_guitar",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v",
+                "ModuleLine": 8,
+                "ModuleName": "guitar_voice",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v",
+                        "InstLine": 140,
+                        "InstName": "u_step_rom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_step_rom.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "guitar_step_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v",
+                        "InstLine": 190,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 490,
+                "InstName": "u_gtr_fx",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_fx.v",
+                "ModuleLine": 3,
+                "ModuleName": "guitar_fx"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 505,
+                "InstName": "u_gtr_rev",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_reverb.v",
+                "ModuleLine": 6,
+                "ModuleName": "guitar_reverb"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 560,
+                "InstName": "u_piano_g0",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                "ModuleLine": 3,
+                "ModuleName": "piano_modal_group4_shared",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 29,
+                        "InstName": "u_core",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "piano_modal_shared_core"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 38,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 580,
+                "InstName": "u_touch_key8",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v",
+                "ModuleLine": 7,
+                "ModuleName": "key_press_pulse"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 611,
+                "InstName": "u_piano_g1",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                "ModuleLine": 3,
+                "ModuleName": "piano_modal_group4_shared",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 29,
+                        "InstName": "u_core",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "piano_modal_shared_core"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 38,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 618,
+                "InstName": "u_piano_g2",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                "ModuleLine": 3,
+                "ModuleName": "piano_modal_group4_shared",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 29,
+                        "InstName": "u_core",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "piano_modal_shared_core"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 38,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 625,
+                "InstName": "u_piano_g3",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                "ModuleLine": 3,
+                "ModuleName": "piano_modal_group4_shared",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 29,
+                        "InstName": "u_core",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "piano_modal_shared_core"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v",
+                        "InstLine": 38,
+                        "InstName": "u_sine",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "sine_lut"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 692,
+                "InstName": "u_drum",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+                "ModuleLine": 4,
+                "ModuleName": "drum_synth3",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+                        "InstLine": 66,
+                        "InstName": "u_krom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/kick_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "kick_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+                        "InstLine": 67,
+                        "InstName": "u_kphi",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/kick_rom.v",
+                        "ModuleLine": 3592,
+                        "ModuleName": "kick_phi_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+                        "InstLine": 68,
+                        "InstName": "u_srom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snd_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "snd_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v",
+                        "InstLine": 69,
+                        "InstName": "u_sin",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/sine_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "sine_rom"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 699,
+                "InstName": "u_snare",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v",
+                "ModuleLine": 3,
+                "ModuleName": "snare_tv_engine",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v",
+                        "InstLine": 41,
+                        "InstName": "u_rom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "snare_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v",
+                        "InstLine": 42,
+                        "InstName": "u_phi",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_rom.v",
+                        "ModuleLine": 3850,
+                        "ModuleName": "snare_phi_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v",
+                        "InstLine": 43,
+                        "InstName": "u_sin",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/sine_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "sine_rom"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 710,
+                "InstName": "u_six",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                "ModuleLine": 3,
+                "ModuleName": "six_drum_synth",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 35,
+                        "InstName": "urom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_rom.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "six_drum_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 36,
+                        "InstName": "uarb",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_rom_arbiter.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "six_rom_arbiter"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 44,
+                        "InstName": "ustate",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_state_ram.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "six_state_ram"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 47,
+                        "InstName": "usin",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/sine_rom.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "sine_rom"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 49,
+                        "InstName": "um",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_modal_engine.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "six_modal_engine",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_modal_engine.v",
+                                "InstLine": 17,
+                                "InstName": "uinc",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_inc_rom.v",
+                                "ModuleLine": 1,
+                                "ModuleName": "six_inc_rom"
+                            }
+                        ]
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 59,
+                        "InstName": "un",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_engine.v",
+                        "ModuleLine": 2,
+                        "ModuleName": "six_noise_engine",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_engine.v",
+                                "InstLine": 28,
+                                "InstName": "unctx",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_ctx_ram.v",
+                                "ModuleLine": 1,
+                                "ModuleName": "six_noise_ctx_ram"
+                            }
+                        ]
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v",
+                        "InstLine": 66,
+                        "InstName": "ut",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_engine.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "six_tom_engine",
+                        "SubInsts": [
+                            {
+                                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_engine.v",
+                                "InstLine": 45,
+                                "InstName": "uctx",
+                                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_ctx_ram.v",
+                                "ModuleLine": 1,
+                                "ModuleName": "six_tom_ctx_ram"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 819,
+                "InstName": "u_stop_ctl",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/audio_stop_control.v",
+                "ModuleLine": 12,
+                "ModuleName": "audio_stop_control"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 829,
+                "InstName": "u_usb_volume",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_volume_control.v",
+                "ModuleLine": 9,
+                "ModuleName": "usb_volume_control"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 834,
+                "InstName": "u_usb_octave",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_octave_control.v",
+                "ModuleLine": 7,
+                "ModuleName": "usb_octave_control"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 840,
+                "InstName": "u_filter_key",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/key_toggle.v",
+                "ModuleLine": 3,
+                "ModuleName": "key_toggle"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 847,
+                "InstName": "u_adc_params",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v",
+                "ModuleLine": 5,
+                "ModuleName": "adc_param_bridge",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v",
+                        "InstLine": 34,
+                        "InstName": "u_i2c",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/i2c_master.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "i2c_master"
+                    },
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v",
+                        "InstLine": 49,
+                        "InstName": "u_adc",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/ads1115_ctrl.v",
+                        "ModuleLine": 4,
+                        "ModuleName": "ads1115_ctrl"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 855,
+                "InstName": "u_adc_filter",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/adc_filter_audio.v",
+                "ModuleLine": 5,
+                "ModuleName": "adc_filter_audio",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/adc_filter_audio.v",
+                        "InstLine": 36,
+                        "InstName": "u_rom",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/filter_coeff_rom.v",
+                        "ModuleLine": 3,
+                        "ModuleName": "filter_coeff_rom"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 864,
+                "InstName": "u_echo",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/audio_echo.v",
+                "ModuleLine": 4,
+                "ModuleName": "audio_echo"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 874,
+                "InstName": "u_audio",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_driver.v",
+                "ModuleLine": 3,
+                "ModuleName": "audio_drive",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_driver.v",
+                        "InstLine": 7,
+                        "InstName": "u_tx",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/pt8211_tx.v",
+                        "ModuleLine": 7,
+                        "ModuleName": "pt8211_tx"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 880,
+                "InstName": "u_amp",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_amp_control.v",
+                "ModuleLine": 4,
+                "ModuleName": "audio_amp_control"
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 883,
+                "InstName": "u_vofa",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/vofa_uart.v",
+                "ModuleLine": 3,
+                "ModuleName": "vofa_uart",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/vofa_uart.v",
+                        "InstLine": 16,
+                        "InstName": "u_tx",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/uart_tx.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "uart_tx"
+                    }
+                ]
+            },
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v",
+                "InstLine": 889,
+                "InstName": "u_visualizer",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/visualizer/usb_visualizer.v",
+                "ModuleLine": 1,
+                "ModuleName": "usb_visualizer",
+                "SubInsts": [
+                    {
+                        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/visualizer/usb_visualizer.v",
+                        "InstLine": 60,
+                        "InstName": "u_uart",
+                        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/uart_tx.v",
+                        "ModuleLine": 1,
+                        "ModuleName": "uart_tx"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+        "InstLine": 269,
+        "InstName": "rom_save_sin",
+        "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+        "ModuleLine": 269,
+        "ModuleName": "rom_save_sin",
+        "SubInsts": [
+            {
+                "InstFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                "InstLine": 278,
+                "InstName": "u_lut",
+                "ModuleFile": "E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v",
+                "ModuleLine": 4,
+                "ModuleName": "sine_lut"
+            }
+        ]
+    }
+]

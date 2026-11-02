@@ -1,0 +1,845 @@
+//
+//Written by GowinSynthesis
+//Tool Version "V1.9.12.03 (64-bit)"
+//Sun Nov  1 18:10:04 2026
+
+//Source file index table:
+//file0 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice.v"
+//file1 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_voice_core.v"
+//file2 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4.v"
+//file3 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_shared_core.v"
+//file4 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/piano_modal_group4_shared.v"
+//file5 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_voice.v"
+//file6 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_fx.v"
+//file7 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/audio_echo.v"
+//file8 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_reverb.v"
+//file9 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_ctrl.v"
+//file10 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/piano_pedal_ctrl.v"
+//file11 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_chord_engine.v"
+//file12 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/audio_stop_control.v"
+//file13 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/demo_player2.v"
+//file14 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/status_led.v"
+//file15 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_amp_control.v"
+//file16 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/pt8211_tx.v"
+//file17 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/ttp229_reader.v"
+//file18 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/key_press_pulse.v"
+//file19 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/gowin_osc/gowin_osc.v"
+//file20 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/top.v"
+//file21 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/visualizer/usb_visualizer.v"
+//file22 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/drum_synth3.v"
+//file23 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_tv_engine.v"
+//file24 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snare_rom.v"
+//file25 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/kick_rom.v"
+//file26 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/snd_rom.v"
+//file27 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/sine_rom.v"
+//file28 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/sine_wave.v"
+//file29 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/output/audio_driver.v"
+//file30 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/uart_tx.v"
+//file31 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/vofa/vofa_uart.v"
+//file32 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_keyboard.v"
+//file33 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_hid_zones.v"
+//file34 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/usb_zones_snapshot.v"
+//file35 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host.v"
+//file36 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_hid_host_rom.v"
+//file37 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll.v"
+//file38 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_pll_mod.v"
+//file39 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/pll_init.v"
+//file40 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_piano_keys.v"
+//file41 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_guitar_keys.v"
+//file42 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_func_keys.v"
+//file43 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_velocity_control.v"
+//file44 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_volume_control.v"
+//file45 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/usb/usb_octave_control.v"
+//file46 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/pitch_bend_ctrl.v"
+//file47 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/interaction/guitar_expression_keys.v"
+//file48 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/bend_ratio_rom.v"
+//file49 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/tone/guitar_step_rom.v"
+//file50 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_rom.v"
+//file51 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_inc_rom.v"
+//file52 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_state_ram.v"
+//file53 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_rom_arbiter.v"
+//file54 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_modal_engine.v"
+//file55 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_ctx_ram.v"
+//file56 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_noise_engine.v"
+//file57 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_ctx_ram.v"
+//file58 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_tom_engine.v"
+//file59 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/drum/six/six_drum_synth.v"
+//file60 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/uart_rx.v"
+//file61 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_uart_tx.v"
+//file62 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_event_fifo.v"
+//file63 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_ctrl_proto.v"
+//file64 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/ble/ble_audio_ctrl.v"
+//file65 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/adc_filter_audio.v"
+//file66 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/filter_coeff_rom.v"
+//file67 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/filter/key_toggle.v"
+//file68 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/i2c_master.v"
+//file69 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/ads1115_ctrl.v"
+//file70 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/adc/adc_param_bridge.v"
+//file71 "\E:/EmbeddedCompetition/GowinProjects/text4/Submission_Final/FPGA/src/music/song_scheduler.v"
+`timescale 100 ps/100 ps
+module sine_lut (
+  clk_d,
+  phase,
+  data_d_0,
+  data_d_1,
+  data_d_2,
+  data_d_3,
+  data_d_4,
+  data_d_5,
+  data_d_6,
+  data_d_7,
+  data_d_8,
+  data_d_9,
+  data_d_10,
+  data_d_11,
+  data_d_15
+)
+;
+input clk_d;
+input [31:24] phase;
+output data_d_0;
+output data_d_1;
+output data_d_2;
+output data_d_3;
+output data_d_4;
+output data_d_5;
+output data_d_6;
+output data_d_7;
+output data_d_8;
+output data_d_9;
+output data_d_10;
+output data_d_11;
+output data_d_15;
+wire [31:13] DO;
+wire VCC;
+wire GND;
+  pROM mem_mem_0_0_s (
+    .DO({DO[31:13],data_d_15,data_d_11,data_d_10,data_d_9,data_d_8,data_d_7,data_d_6,data_d_5,data_d_4,data_d_3,data_d_2,data_d_1,data_d_0}),
+    .CLK(clk_d),
+    .CE(VCC),
+    .OCE(GND),
+    .RESET(GND),
+    .AD({GND,GND,phase[31:24],GND,GND,VCC,VCC}) 
+);
+defparam mem_mem_0_0_s.BIT_WIDTH=16;
+defparam mem_mem_0_0_s.READ_MODE=1'b0;
+defparam mem_mem_0_0_s.RESET_MODE="SYNC";
+defparam mem_mem_0_0_s.INIT_RAM_00=256'h05C20563050404A4044403E30381031F02BC025801F50191012D00C800640000;
+defparam mem_mem_0_0_s.INIT_RAM_01=256'h0B080ABE0A730A2609D70987093608E3088F083907E2078A073106D7067B061F;
+defparam mem_mem_0_0_s.INIT_RAM_02=256'h0EA00E760E4A0E1C0DEB0DB90D840D4D0D140CD90C9D0C5E0C1D0BDA0B960B50;
+defparam mem_mem_0_0_s.INIT_RAM_03=256'h0FFE0FFB0FF40FEC0FE10FD30FC30FB10F9C0F850F6B0F4F0F310F100EED0EC8;
+defparam mem_mem_0_0_s.INIT_RAM_04=256'h0EED0F100F310F4F0F6B0F850F9C0FB10FC30FD30FE10FEC0FF40FFB0FFE0FFF;
+defparam mem_mem_0_0_s.INIT_RAM_05=256'h0B960BDA0C1D0C5E0C9D0CD90D140D4D0D840DB90DEB0E1C0E4A0E760EA00EC8;
+defparam mem_mem_0_0_s.INIT_RAM_06=256'h067B06D70731078A07E20839088F08E30936098709D70A260A730ABE0B080B50;
+defparam mem_mem_0_0_s.INIT_RAM_07=256'h006400C8012D019101F5025802BC031F038103E3044404A40504056305C2061F;
+defparam mem_mem_0_0_s.INIT_RAM_08=256'h1A3E1A9C1AFB1B5B1BBB1C1C1C7E1CE11D431DA71E0A1E6E1ED21F371F9B0000;
+defparam mem_mem_0_0_s.INIT_RAM_09=256'h14F71541158C15D91628167816C9171C177017C6181D187518CE1928198419E0;
+defparam mem_mem_0_0_s.INIT_RAM_0A=256'h115F118911B511E312141246127B12B212EB1326136313A113E21425146914AF;
+defparam mem_mem_0_0_s.INIT_RAM_0B=256'h10011005100B1013101E102C103C104E1063107A109410B010CE10EF11121137;
+defparam mem_mem_0_0_s.INIT_RAM_0C=256'h111210EF10CE10B01094107A1063104E103C102C101E1013100B100510011000;
+defparam mem_mem_0_0_s.INIT_RAM_0D=256'h1469142513E213A11363132612EB12B2127B1246121411E311B51189115F1137;
+defparam mem_mem_0_0_s.INIT_RAM_0E=256'h1984192818CE1875181D17C61770171C16C91678162815D9158C154114F714AF;
+defparam mem_mem_0_0_s.INIT_RAM_0F=256'h1F9B1F371ED21E6E1E0A1DA71D431CE11C7E1C1C1BBB1B5B1AFB1A9C1A3E19E0;
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+endmodule /* sine_lut */
+module rom_save_sin (
+  clk,
+  rst_n,
+  sample_tick,
+  data
+)
+;
+input clk;
+input rst_n;
+input sample_tick;
+output [15:0] data;
+wire clk_d;
+wire rst_n_d;
+wire sample_tick_d;
+wire n38_1;
+wire n38_2;
+wire n37_1;
+wire n37_2;
+wire n36_1;
+wire n36_2;
+wire n35_1;
+wire n35_2;
+wire n34_1;
+wire n34_2;
+wire n33_1;
+wire n33_2;
+wire n32_1;
+wire n32_2;
+wire n31_1;
+wire n31_2;
+wire n30_1;
+wire n30_2;
+wire n29_1;
+wire n29_2;
+wire n28_1;
+wire n28_2;
+wire n27_1;
+wire n27_2;
+wire n26_1;
+wire n26_2;
+wire n25_1;
+wire n25_2;
+wire n24_1;
+wire n24_2;
+wire n23_1;
+wire n23_2;
+wire n22_1;
+wire n22_2;
+wire n21_1;
+wire n21_2;
+wire n20_1;
+wire n20_2;
+wire n19_1;
+wire n19_2;
+wire n18_1;
+wire n18_2;
+wire n17_1;
+wire n17_2;
+wire n16_1;
+wire n16_2;
+wire n15_1;
+wire n15_2;
+wire n14_1;
+wire n14_2;
+wire n13_1;
+wire n13_2;
+wire n12_1;
+wire n12_2;
+wire n11_1;
+wire n11_2;
+wire n10_1;
+wire n10_2;
+wire n9_1;
+wire n9_2;
+wire n8_1;
+wire n8_0_COUT;
+wire n6_7;
+wire n39_6;
+wire [31:0] phase;
+wire [15:0] data_d;
+wire VCC;
+wire GND;
+  IBUF clk_ibuf (
+    .O(clk_d),
+    .I(clk) 
+);
+  IBUF rst_n_ibuf (
+    .O(rst_n_d),
+    .I(rst_n) 
+);
+  IBUF sample_tick_ibuf (
+    .O(sample_tick_d),
+    .I(sample_tick) 
+);
+  OBUF data_0_obuf (
+    .O(data[0]),
+    .I(data_d[0]) 
+);
+  OBUF data_1_obuf (
+    .O(data[1]),
+    .I(data_d[1]) 
+);
+  OBUF data_2_obuf (
+    .O(data[2]),
+    .I(data_d[2]) 
+);
+  OBUF data_3_obuf (
+    .O(data[3]),
+    .I(data_d[3]) 
+);
+  OBUF data_4_obuf (
+    .O(data[4]),
+    .I(data_d[4]) 
+);
+  OBUF data_5_obuf (
+    .O(data[5]),
+    .I(data_d[5]) 
+);
+  OBUF data_6_obuf (
+    .O(data[6]),
+    .I(data_d[6]) 
+);
+  OBUF data_7_obuf (
+    .O(data[7]),
+    .I(data_d[7]) 
+);
+  OBUF data_8_obuf (
+    .O(data[8]),
+    .I(data_d[8]) 
+);
+  OBUF data_9_obuf (
+    .O(data[9]),
+    .I(data_d[9]) 
+);
+  OBUF data_10_obuf (
+    .O(data[10]),
+    .I(data_d[10]) 
+);
+  OBUF data_11_obuf (
+    .O(data[11]),
+    .I(data_d[11]) 
+);
+  OBUF data_12_obuf (
+    .O(data[12]),
+    .I(data_d[15]) 
+);
+  OBUF data_13_obuf (
+    .O(data[13]),
+    .I(data_d[15]) 
+);
+  OBUF data_14_obuf (
+    .O(data[14]),
+    .I(data_d[15]) 
+);
+  OBUF data_15_obuf (
+    .O(data[15]),
+    .I(data_d[15]) 
+);
+  DFFCE phase_30_s0 (
+    .Q(phase[30]),
+    .D(n9_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_29_s0 (
+    .Q(phase[29]),
+    .D(n10_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_28_s0 (
+    .Q(phase[28]),
+    .D(n11_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_27_s0 (
+    .Q(phase[27]),
+    .D(n12_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_26_s0 (
+    .Q(phase[26]),
+    .D(n13_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_25_s0 (
+    .Q(phase[25]),
+    .D(n14_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_24_s0 (
+    .Q(phase[24]),
+    .D(n15_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_23_s0 (
+    .Q(phase[23]),
+    .D(n16_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_22_s0 (
+    .Q(phase[22]),
+    .D(n17_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_21_s0 (
+    .Q(phase[21]),
+    .D(n18_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_20_s0 (
+    .Q(phase[20]),
+    .D(n19_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_19_s0 (
+    .Q(phase[19]),
+    .D(n20_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_18_s0 (
+    .Q(phase[18]),
+    .D(n21_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_17_s0 (
+    .Q(phase[17]),
+    .D(n22_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_16_s0 (
+    .Q(phase[16]),
+    .D(n23_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_15_s0 (
+    .Q(phase[15]),
+    .D(n24_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_14_s0 (
+    .Q(phase[14]),
+    .D(n25_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_13_s0 (
+    .Q(phase[13]),
+    .D(n26_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_12_s0 (
+    .Q(phase[12]),
+    .D(n27_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_11_s0 (
+    .Q(phase[11]),
+    .D(n28_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_10_s0 (
+    .Q(phase[10]),
+    .D(n29_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_9_s0 (
+    .Q(phase[9]),
+    .D(n30_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_8_s0 (
+    .Q(phase[8]),
+    .D(n31_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_7_s0 (
+    .Q(phase[7]),
+    .D(n32_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_6_s0 (
+    .Q(phase[6]),
+    .D(n33_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_5_s0 (
+    .Q(phase[5]),
+    .D(n34_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_4_s0 (
+    .Q(phase[4]),
+    .D(n35_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_3_s0 (
+    .Q(phase[3]),
+    .D(n36_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_2_s0 (
+    .Q(phase[2]),
+    .D(n37_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_1_s0 (
+    .Q(phase[1]),
+    .D(n38_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_0_s0 (
+    .Q(phase[0]),
+    .D(n39_6),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  DFFCE phase_31_s0 (
+    .Q(phase[31]),
+    .D(n8_1),
+    .CLK(clk_d),
+    .CLEAR(n6_7),
+    .CE(sample_tick_d) 
+);
+  ALU n38_s (
+    .SUM(n38_1),
+    .COUT(n38_2),
+    .I0(phase[1]),
+    .I1(phase[0]),
+    .I3(VCC),
+    .CIN(GND) 
+);
+defparam n38_s.ALU_MODE=0;
+  ALU n37_s (
+    .SUM(n37_1),
+    .COUT(n37_2),
+    .I0(phase[2]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n38_2) 
+);
+defparam n37_s.ALU_MODE=0;
+  ALU n36_s (
+    .SUM(n36_1),
+    .COUT(n36_2),
+    .I0(phase[3]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n37_2) 
+);
+defparam n36_s.ALU_MODE=0;
+  ALU n35_s (
+    .SUM(n35_1),
+    .COUT(n35_2),
+    .I0(phase[4]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n36_2) 
+);
+defparam n35_s.ALU_MODE=0;
+  ALU n34_s (
+    .SUM(n34_1),
+    .COUT(n34_2),
+    .I0(phase[5]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n35_2) 
+);
+defparam n34_s.ALU_MODE=0;
+  ALU n33_s (
+    .SUM(n33_1),
+    .COUT(n33_2),
+    .I0(phase[6]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n34_2) 
+);
+defparam n33_s.ALU_MODE=0;
+  ALU n32_s (
+    .SUM(n32_1),
+    .COUT(n32_2),
+    .I0(phase[7]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n33_2) 
+);
+defparam n32_s.ALU_MODE=0;
+  ALU n31_s (
+    .SUM(n31_1),
+    .COUT(n31_2),
+    .I0(phase[8]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n32_2) 
+);
+defparam n31_s.ALU_MODE=0;
+  ALU n30_s (
+    .SUM(n30_1),
+    .COUT(n30_2),
+    .I0(phase[9]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n31_2) 
+);
+defparam n30_s.ALU_MODE=0;
+  ALU n29_s (
+    .SUM(n29_1),
+    .COUT(n29_2),
+    .I0(phase[10]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n30_2) 
+);
+defparam n29_s.ALU_MODE=0;
+  ALU n28_s (
+    .SUM(n28_1),
+    .COUT(n28_2),
+    .I0(phase[11]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n29_2) 
+);
+defparam n28_s.ALU_MODE=0;
+  ALU n27_s (
+    .SUM(n27_1),
+    .COUT(n27_2),
+    .I0(phase[12]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n28_2) 
+);
+defparam n27_s.ALU_MODE=0;
+  ALU n26_s (
+    .SUM(n26_1),
+    .COUT(n26_2),
+    .I0(phase[13]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n27_2) 
+);
+defparam n26_s.ALU_MODE=0;
+  ALU n25_s (
+    .SUM(n25_1),
+    .COUT(n25_2),
+    .I0(phase[14]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n26_2) 
+);
+defparam n25_s.ALU_MODE=0;
+  ALU n24_s (
+    .SUM(n24_1),
+    .COUT(n24_2),
+    .I0(phase[15]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n25_2) 
+);
+defparam n24_s.ALU_MODE=0;
+  ALU n23_s (
+    .SUM(n23_1),
+    .COUT(n23_2),
+    .I0(phase[16]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n24_2) 
+);
+defparam n23_s.ALU_MODE=0;
+  ALU n22_s (
+    .SUM(n22_1),
+    .COUT(n22_2),
+    .I0(phase[17]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n23_2) 
+);
+defparam n22_s.ALU_MODE=0;
+  ALU n21_s (
+    .SUM(n21_1),
+    .COUT(n21_2),
+    .I0(phase[18]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n22_2) 
+);
+defparam n21_s.ALU_MODE=0;
+  ALU n20_s (
+    .SUM(n20_1),
+    .COUT(n20_2),
+    .I0(phase[19]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n21_2) 
+);
+defparam n20_s.ALU_MODE=0;
+  ALU n19_s (
+    .SUM(n19_1),
+    .COUT(n19_2),
+    .I0(phase[20]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n20_2) 
+);
+defparam n19_s.ALU_MODE=0;
+  ALU n18_s (
+    .SUM(n18_1),
+    .COUT(n18_2),
+    .I0(phase[21]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n19_2) 
+);
+defparam n18_s.ALU_MODE=0;
+  ALU n17_s (
+    .SUM(n17_1),
+    .COUT(n17_2),
+    .I0(phase[22]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n18_2) 
+);
+defparam n17_s.ALU_MODE=0;
+  ALU n16_s (
+    .SUM(n16_1),
+    .COUT(n16_2),
+    .I0(phase[23]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n17_2) 
+);
+defparam n16_s.ALU_MODE=0;
+  ALU n15_s (
+    .SUM(n15_1),
+    .COUT(n15_2),
+    .I0(phase[24]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n16_2) 
+);
+defparam n15_s.ALU_MODE=0;
+  ALU n14_s (
+    .SUM(n14_1),
+    .COUT(n14_2),
+    .I0(phase[25]),
+    .I1(VCC),
+    .I3(VCC),
+    .CIN(n15_2) 
+);
+defparam n14_s.ALU_MODE=0;
+  ALU n13_s (
+    .SUM(n13_1),
+    .COUT(n13_2),
+    .I0(phase[26]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n14_2) 
+);
+defparam n13_s.ALU_MODE=0;
+  ALU n12_s (
+    .SUM(n12_1),
+    .COUT(n12_2),
+    .I0(phase[27]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n13_2) 
+);
+defparam n12_s.ALU_MODE=0;
+  ALU n11_s (
+    .SUM(n11_1),
+    .COUT(n11_2),
+    .I0(phase[28]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n12_2) 
+);
+defparam n11_s.ALU_MODE=0;
+  ALU n10_s (
+    .SUM(n10_1),
+    .COUT(n10_2),
+    .I0(phase[29]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n11_2) 
+);
+defparam n10_s.ALU_MODE=0;
+  ALU n9_s (
+    .SUM(n9_1),
+    .COUT(n9_2),
+    .I0(phase[30]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n10_2) 
+);
+defparam n9_s.ALU_MODE=0;
+  ALU n8_s (
+    .SUM(n8_1),
+    .COUT(n8_0_COUT),
+    .I0(phase[31]),
+    .I1(GND),
+    .I3(VCC),
+    .CIN(n9_2) 
+);
+defparam n8_s.ALU_MODE=0;
+  INV n6_s2 (
+    .O(n6_7),
+    .I(rst_n_d) 
+);
+  INV n39_s2 (
+    .O(n39_6),
+    .I(phase[0]) 
+);
+  sine_lut u_lut (
+    .clk_d(clk_d),
+    .phase(phase[31:24]),
+    .data_d_0(data_d[0]),
+    .data_d_1(data_d[1]),
+    .data_d_2(data_d[2]),
+    .data_d_3(data_d[3]),
+    .data_d_4(data_d[4]),
+    .data_d_5(data_d[5]),
+    .data_d_6(data_d[6]),
+    .data_d_7(data_d[7]),
+    .data_d_8(data_d[8]),
+    .data_d_9(data_d[9]),
+    .data_d_10(data_d[10]),
+    .data_d_11(data_d[11]),
+    .data_d_15(data_d[15])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* rom_save_sin */

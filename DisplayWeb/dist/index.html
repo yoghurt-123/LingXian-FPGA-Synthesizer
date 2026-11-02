@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080b10" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>AURAL / FPGA Instrument Display</title>
+    <script type="module" crossorigin src="./assets/index-CoPCuTsD.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-C25oNH1s.css">
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </div>
+          <div>
+            <div class="brand">AURAL<span>//</span>FPGA</div>
+            <div class="brand-sub">INSTRUMENT DISPLAY · LOCAL SERIAL</div>
+          </div>
+        </div>
+
+        <div class="status-cluster">
+          <div class="status-pill" id="statusPill" data-state="disconnected">
+            <span class="status-dot"></span>
+            <span id="statusText">未连接</span>
+          </div>
+          <div class="source-pill" id="sourcePill">等待数据源</div>
+          <div class="live-time" id="liveTime">--:--:--</div>
+        </div>
+
+        <div class="top-actions">
+          <button class="button button-ghost" id="connectButton" type="button">连接设备</button>
+          <button class="button button-ghost" id="disconnectButton" type="button" disabled>断开</button>
+          <button class="icon-button" id="fullscreenButton" type="button" title="全屏">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M21 16v5h-5" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <main class="workspace">
+        <section class="stage-shell">
+          <canvas id="stage" aria-label="照片、波形和频谱可视化"></canvas>
+          <div class="demo-banner" id="demoBanner" hidden>
+            <span class="demo-dot"></span>
+            DEMO 模式 · 当前画面不是硬件数据
+          </div>
+          <div class="stage-corner stage-corner-left">LIVE / LOCAL</div>
+          <div class="stage-corner stage-corner-right" id="stageClock">FRAME --</div>
+          <div class="empty-state" id="emptyState">
+            <div class="empty-index">01</div>
+            <div class="empty-title">等待真实数据</div>
+            <div class="empty-copy">
+              通过 USB 调试口连接 FPGA。当前音源固件使用 VOFA JustFloat 原始 PCM；
+              频谱需要新增帧协议。
+            </div>
+            <button class="button button-accent" id="emptyConnect" type="button">选择串口设备</button>
+          </div>
+        </section>
+
+        <div class="fullscreen-hud" id="fullscreenHud" hidden>
+          <div class="fullscreen-hud-left">
+            <span class="status-dot"></span>
+            <strong id="fsStatus">未连接</strong>
+            <span id="fsSource">本地串口</span>
+          </div>
+          <div class="fullscreen-actions">
+            <button class="fullscreen-exit" id="fsConnectButton" type="button">连接</button>
+            <button class="fullscreen-exit" id="fsDisconnectButton" type="button" disabled>断开</button>
+            <button class="fullscreen-exit" id="exitFullscreenButton" type="button">
+              退出全屏 <span>ESC</span>
+            </button>
+          </div>
+        </div>
+
+        <aside class="control-panel">
+          <section class="panel-section">
+            <div class="section-heading">
+              <span>连接</span>
+              <span class="section-index">01</span>
+            </div>
+            <label class="field-label" for="baudSelect">串口波特率</label>
+            <select class="control" id="baudSelect">
+              <option value="921600" selected>921600 · 当前音频 VOFA</option>
+              <option value="115200">115200 · ADC 遥测</option>
+              <option value="460800">460800</option>
+              <option value="230400">230400</option>
+              <option value="57600">57600</option>
+            </select>
+            <div class="field-hint" id="serialHint">
+              Chrome / Edge · 需要 localhost 或 HTTPS。必须由用户点击选择串口。
+            </div>
+            <button class="button button-accent button-wide" id="panelConnect" type="button">
+              连接 USB 串口
+            </button>
+            <button class="button button-quiet button-wide" id="reconnectButton" type="button" disabled>
+              重新连接
+            </button>
+          </section>
+
+          <section class="panel-section">
+            <div class="section-heading">
+              <span>照片舞台</span>
+              <span class="section-index">02</span>
+            </div>
+            <label class="upload-zone" for="photoInput">
+              <span class="upload-plus">+</span>
+              <span>导入本地照片</span>
+              <span class="upload-meta" id="photoCount">3 张默认照片</span>
+            </label>
+            <input id="photoInput" type="file" accept="image/*" multiple hidden />
+            <label class="field-label" for="intervalRange">切换间隔 <output id="intervalValue">10.0 s</output></label>
+            <input class="range" id="intervalRange" type="range" min="4" max="30" step="0.5" value="10" />
+            <label class="field-label" for="photoOffsetRange">照片位置 <output id="photoOffsetValue">居中</output></label>
+            <input class="range" id="photoOffsetRange" type="range" min="-100" max="100" step="1" value="0" />
+            <div class="field-hint">支持多选导入、本地预览；每张照片独立淡入淡出。全屏使用 cover，位置可预调。</div>
+          </section>
+
+          <section class="panel-section">
+            <div class="section-heading">
+              <span>显示</span>
+              <span class="section-index">03</span>
+            </div>
+            <label class="field-label" for="spectrumBars">频谱显示柱</label>
+            <select class="control" id="spectrumBars">
+              <option value="32">32 根细柱</option>
+              <option value="64" selected>64 根细柱</option>
+              <option value="96">96 根细柱</option>
+            </select>
+            <div class="color-row">
+              <label class="field-label" for="spectrumColor">频谱辉光</label>
+              <input class="color-input" id="spectrumColor" type="color" value="#46d7e8" />
+            </div>
+            <div class="color-row">
+              <label class="field-label" for="waveColor">波形</label>
+              <input class="color-input" id="waveColor" type="color" value="#9bffef" />
+            </div>
+            <label class="field-label" for="spectrumGainRange">显示增益 <output id="spectrumGainValue">1.40×</output></label>
+            <input class="range" id="spectrumGainRange" type="range" min="0.6" max="2.4" step="0.05" value="1.4" />
+            <label class="field-label" for="intensityRange">显示强度 <output id="intensityValue">78%</output></label>
+            <input class="range" id="intensityRange" type="range" min="30" max="100" step="1" value="78" />
+            <label class="switch-row">
+              <span>
+                <span class="field-label">演示模式</span>
+                <span class="field-hint">用于 UI 验证，画面明确标注非硬件数据。</span>
+              </span>
+              <input id="demoToggle" type="checkbox" />
+              <span class="switch" aria-hidden="true"></span>
+            </label>
+          </section>
+
+          <section class="panel-section panel-section-last">
+            <div class="section-heading">
+              <span>数据状态</span>
+              <span class="section-index">04</span>
+            </div>
+            <div class="metric-grid">
+              <div class="metric">
+                <span class="metric-label">格式</span>
+                <span class="metric-value" id="formatValue">未识别</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">采样率</span>
+                <span class="metric-value" id="rateValue">--</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">字节</span>
+                <span class="metric-value" id="bytesValue">0</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">有效帧</span>
+                <span class="metric-value" id="framesValue">0</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">错误帧</span>
+                <span class="metric-value" id="errorsValue">0</span>
+              </div>
+              <div class="metric">
+                <span class="metric-label">最近数据</span>
+                <span class="metric-value" id="lastValue">--</span>
+              </div>
+            </div>
+
+            <details class="diagnostics" id="diagnostics">
+              <summary>诊断详情 <span id="diagSummary">已折叠</span></summary>
+              <div class="diag-body">
+                <div class="diag-line"><span>连接</span><strong id="diagConnection">未连接</strong></div>
+                <div class="diag-line"><span>数据状态</span><strong id="diagDataState">无数据</strong></div>
+                <div class="diag-line"><span>协议</span><strong id="diagProtocol">等待自动识别</strong></div>
+                <div class="diag-line"><span>接收速率</span><strong id="diagByteRate">0 B/s</strong></div>
+                <div class="diag-line"><span>最后错误</span><strong id="diagError">无</strong></div>
+                <div class="diag-line"><span>频谱</span><strong id="diagSpectrum">等待帧协议</strong></div>
+                <div class="raw-head"><span>RX 原始字节</span><span id="rawMeta">0 B</span></div>
+                <pre class="raw-pre" id="rawPreview">等待串口原始字节…</pre>
+                <div class="raw-head"><span>解析错误详情</span><span id="parseErrorCode">无</span></div>
+                <pre class="parse-detail" id="parseErrorDetail">无</pre>
+              </div>
+            </details>
+            <div class="protocol-note" id="protocolNote">
+              当前音频工程实测为 U15 → FTDI → COM 调试口，921600 8N1，VOFA JustFloat。
+              它只有原始 PCM 波形，没有 FPGA 频谱。新增频谱请按 docs/PROTOCOL.md 实现帧协议。
+            </div>
+          </section>
+        </aside>
+      </main>
+
+      <footer class="footer">
+        <span>FPGA AUDIO / LOCAL WEB SERIAL</span>
+        <span>照片与数据不上传 · Web Serial 需要用户授权</span>
+        <span id="supportState">检测浏览器能力…</span>
+      </footer>
+    </div>
+  </body>
+</html>

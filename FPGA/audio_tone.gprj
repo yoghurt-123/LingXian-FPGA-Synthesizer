@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project><Template>FPGA</Template><Version>5</Version>
+<Device name="GW5AT-60B" pn="GW5AT-LV60PG484AC1/I0">gw5at60b-002</Device>
+<FileList>
+<File path="src/tone/piano_modal_voice.v" type="file.verilog" enable="1"/>
+<File path="src/tone/piano_modal_voice_core.v" type="file.verilog" enable="1"/>
+<File path="src/tone/piano_modal_group4.v" type="file.verilog" enable="1"/>
+<File path="src/tone/piano_modal_shared_core.v" type="file.verilog" enable="1"/>
+<File path="src/tone/piano_modal_group4_shared.v" type="file.verilog" enable="1"/>
+<File path="src/tone/guitar_voice.v" type="file.verilog" enable="1"/>
+<File path="src/tone/guitar_fx.v" type="file.verilog" enable="1"/>
+<File path="src/tone/audio_echo.v" type="file.verilog" enable="1"/>
+<File path="src/tone/guitar_reverb.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/guitar_ctrl.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/piano_pedal_ctrl.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/guitar_chord_engine.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/audio_stop_control.v" type="file.verilog" enable="1"/>
+    <File path="src/interaction/demo_player2.v" type="file.verilog" enable="1"/>
+<File path="src/output/status_led.v" type="file.verilog" enable="1"/>
+<File path="src/output/audio_amp_control.v" type="file.verilog" enable="1"/>
+<File path="src/output/pt8211_tx.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/ttp229_reader.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/key_press_pulse.v" type="file.verilog" enable="1"/>
+<File path="src/gowin_osc/gowin_osc.v" type="file.verilog" enable="1"/>
+<File path="src/top.v" type="file.verilog" enable="1"/>
+<File path="src/visualizer/usb_visualizer.v" type="file.verilog" enable="1"/>
+
+<File path="src/drum/drum_synth3.v" type="file.verilog" enable="1"/>
+<File path="src/drum/snare_tv_engine.v" type="file.verilog" enable="1"/>
+<File path="src/drum/snare_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/kick_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/snd_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/sine_rom.v" type="file.verilog" enable="1"/>
+<File path="src/tone/sine_wave.v" type="file.verilog" enable="1"/>
+<File path="src/output/audio_driver.v" type="file.verilog" enable="1"/>
+<File path="src/vofa/uart_tx.v" type="file.verilog" enable="1"/>
+<File path="src/vofa/vofa_uart.v" type="file.verilog" enable="1"/>
+<File path="src/constraints/audio.cst" type="file.cst" enable="1"/>
+<File path="src/constraints/timing.sdc" type="file.sdc" enable="1"/>
+<File path="src/usb/usb_keyboard.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/usb_hid_zones.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/usb_zones_snapshot.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_hid_host.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_hid_host_rom.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_pll.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_pll_mod.v" type="file.verilog" enable="1"/>
+<File path="src/usb/pll_init.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_piano_keys.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_guitar_keys.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_func_keys.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_velocity_control.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_volume_control.v" type="file.verilog" enable="1"/>
+<File path="src/usb/usb_octave_control.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/pitch_bend_ctrl.v" type="file.verilog" enable="1"/>
+<File path="src/interaction/guitar_expression_keys.v" type="file.verilog" enable="1"/>
+<File path="src/tone/bend_ratio_rom.v" type="file.verilog" enable="1"/>
+<File path="src/tone/guitar_step_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_drum_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_inc_rom.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_state_ram.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_rom_arbiter.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_modal_engine.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_noise_ctx_ram.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_noise_engine.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_tom_ctx_ram.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_tom_engine.v" type="file.verilog" enable="1"/>
+<File path="src/drum/six/six_drum_synth.v" type="file.verilog" enable="1"/><File path="src/ble/uart_rx.v" type="file.verilog" enable="1"/>
+<File path="src/ble/ble_uart_tx.v" type="file.verilog" enable="1"/>
+<File path="src/ble/ble_event_fifo.v" type="file.verilog" enable="1"/>
+<File path="src/ble/ble_ctrl_proto.v" type="file.verilog" enable="1"/>
+<File path="src/ble/ble_audio_ctrl.v" type="file.verilog" enable="1"/><File path="src/filter/adc_filter_audio.v" type="file.verilog" enable="1"/>
+<File path="src/filter/filter_coeff_rom.v" type="file.verilog" enable="1"/>
+
+<File path="src/filter/key_toggle.v" type="file.verilog" enable="1"/>
+<File path="src/adc/i2c_master.v" type="file.verilog" enable="1"/>
+<File path="src/adc/ads1115_ctrl.v" type="file.verilog" enable="1"/>
+<File path="src/adc/adc_param_bridge.v" type="file.verilog" enable="1"/><File path="src/music/song_scheduler.v" type="file.verilog" enable="1"/></FileList></Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

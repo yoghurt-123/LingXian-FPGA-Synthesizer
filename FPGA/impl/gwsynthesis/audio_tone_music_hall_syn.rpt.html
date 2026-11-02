@@ -1,0 +1,9789 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>synthesis Report</title>
+<style type="text/css">
+body { font-family: Verdana, Arial, sans-serif; font-size: 12px; }
+div#main_wrapper{ width: 100%; }
+div#content { margin-left: 350px; margin-right: 30px; }
+div#catalog_wrapper {position: fixed; top: 30px; width: 350px; float: left; }
+div#catalog ul { list-style-type: none; }
+div#catalog li { text-align: left; list-style-type:circle; color: #0084ff; margin-top: 3px; margin-bottom: 3px; }
+div#catalog a { display:inline-block; text-decoration: none; color: #0084ff; font-weight: bold; padding: 3px; }
+div#catalog a:visited { color: #0084ff; }
+div#catalog a:hover { color: #fff; background: #0084ff; }
+hr { margin-top: 30px; margin-bottom: 30px; }
+h1, h3 { text-align: center; }
+h1 {margin-top: 50px; }
+table, th, td { border: 1px solid #aaa; }
+table { border-collapse:collapse; margin-top: 10px; margin-bottom: 20px; width: 100%; }
+th, td { padding: 5px 5px 5px 5px; }
+th { color: #fff; font-weight: bold; background-color: #0084ff; }
+table.summary_table td.label { width: 24%; min-width: 200px; background-color: #dee8f4; }
+table.detail_table td.label { min-width: 100px; width: 8%;}
+</style>
+</head>
+<body>
+<div id="main_wrapper">
+<div id="catalog_wrapper">
+<div id="catalog">
+<ul>
+<li><a href="#about" style=" font-size: 16px;">Synthesis Messages</a></li>
+<li><a href="#summary" style=" font-size: 16px;">Synthesis Details</a></li>
+<li><a href="#resource" style=" font-size: 16px;">Resource</a>
+<ul>
+<li><a href="#usage" style=" font-size: 14px;">Resource Usage Summary</a></li>
+<li><a href="#utilization" style=" font-size: 14px;">Resource Utilization Summary</a></li>
+</ul>
+</li>
+<li><a href="#timing" style=" font-size: 16px;">Timing</a>
+<ul>
+<li><a href="#clock" style=" font-size: 14px;">Clock Summary</a></li>
+<li><a href="#performance" style=" font-size: 14px;">Max Frequency Summary</a></li>
+<li><a href="#detail timing" style=" font-size: 14px;">Detail Timing Paths Informations</a></li>
+</ul>
+</li>
+</ul>
+</div><!-- catalog -->
+</div><!-- catalog_wrapper -->
+<div id="content">
+<h1><a name="about">Synthesis Messages</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Report Title</td>
+<td>GowinSynthesis Report</td>
+</tr>
+<tr>
+<td class="label">Design File</td>
+<td>E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_voice_core.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_shared_core.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\piano_modal_group4_shared.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_voice.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_fx.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\audio_echo.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_reverb.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_ctrl.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\piano_pedal_ctrl.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_chord_engine.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\audio_stop_control.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\demo_player2.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\status_led.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_amp_control.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\pt8211_tx.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\ttp229_reader.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\key_press_pulse.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\gowin_osc\gowin_osc.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\top.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\visualizer\usb_visualizer.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\drum_synth3.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_tv_engine.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snare_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\kick_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\snd_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\sine_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\sine_wave.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\output\audio_driver.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\uart_tx.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\vofa\vofa_uart.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_keyboard.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_hid_zones.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\usb_zones_snapshot.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_hid_host_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_pll_mod.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\pll_init.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_piano_keys.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_guitar_keys.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_func_keys.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_velocity_control.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_volume_control.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\usb\usb_octave_control.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\pitch_bend_ctrl.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\interaction\guitar_expression_keys.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\bend_ratio_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\tone\guitar_step_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_inc_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_state_ram.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_rom_arbiter.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_modal_engine.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_ctx_ram.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_noise_engine.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_ctx_ram.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_tom_engine.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\drum\six\six_drum_synth.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\uart_rx.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_uart_tx.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_event_fifo.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_ctrl_proto.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\ble\ble_audio_ctrl.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\adc_filter_audio.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\filter_coeff_rom.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\filter\key_toggle.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\i2c_master.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\ads1115_ctrl.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\adc\adc_param_bridge.v<br>
+E:\EmbeddedCompetition\GowinProjects\text4\Submission_Final\FPGA\src\music\song_scheduler.v<br>
+</td>
+</tr>
+<tr>
+<td class="label">GowinSynthesis Constraints File</td>
+<td>---</td>
+</tr>
+<tr>
+<td class="label">Tool Version</td>
+<td>V1.9.12.03 (64-bit)</td>
+</tr>
+<tr>
+<td class="label">Part Number</td>
+<td>GW5AT-LV60PG484AC1/I0</td>
+</tr>
+<tr>
+<td class="label">Device</td>
+<td>GW5AT-60</td>
+</tr>
+<tr>
+<td class="label">Device Version</td>
+<td>B</td>
+</tr>
+<tr>
+<td class="label">Created Time</td>
+<td>Sun Nov  1 18:14:51 2026
+</td>
+</tr>
+<tr>
+<td class="label">Legal Announcement</td>
+<td>Copyright (C)2014-2026 Gowin Semiconductor Corporation. ALL rights reserved.</td>
+</tr>
+</table>
+<h1><a name="summary">Synthesis Details</a></h1>
+<table class="summary_table">
+<tr>
+<td class="label">Top Level Module</td>
+<td>top</td>
+</tr>
+<tr>
+<td class="label">Synthesis Process</td>
+<td>Running parser:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 558.555MB<br/>Running netlist conversion:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 0s, Elapsed time = 0h 0m 0s, Peak memory usage = 0MB<br/>Running device independent optimization:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 0: CPU time = 0h 0m 21s, Elapsed time = 0h 0m 21s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 1: CPU time = 0h 0m 10s, Elapsed time = 0h 0m 10s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Optimizing Phase 2: CPU time = 0h 0m 34s, Elapsed time = 0h 0m 34s, Peak memory usage = 558.555MB<br/>Running inference:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 0: CPU time = 0h 0m 32s, Elapsed time = 0h 0m 32s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 1: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 2: CPU time = 0h 0m 0.468s, Elapsed time = 0h 0m 0.489s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Inferring Phase 3: CPU time = 0h 0m 0.421s, Elapsed time = 0h 0m 0.412s, Peak memory usage = 558.555MB<br/>Running technical mapping:<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 0: CPU time = 0h 0m 16s, Elapsed time = 0h 0m 16s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 1: CPU time = 0h 0m 3s, Elapsed time = 0h 0m 3s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 2: CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 558.555MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 3: CPU time = 0h 1m 26s, Elapsed time = 0h 1m 28s, Peak memory usage = 600.293MB<br/>&nbsp;&nbsp;&nbsp;&nbsp;Tech-Mapping Phase 4: CPU time = 0h 0m 5s, Elapsed time = 0h 0m 5s, Peak memory usage = 600.293MB<br/>Generate output files:<br/>&nbsp;&nbsp;&nbsp;&nbsp;CPU time = 0h 0m 4s, Elapsed time = 0h 0m 4s, Peak memory usage = 762.430MB<br/></td>
+</tr>
+<tr>
+<td class="label">Total Time and Memory Usage</td>
+<td>CPU time = 0h 3m 42s, Elapsed time = 0h 3m 44s, Peak memory usage = 762.430MB</td>
+</tr>
+</table>
+<h1><a name="resource">Resource</a></h1>
+<h2><a name="usage">Resource Usage Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+</tr>
+<tr>
+<td class="label"><b>I/O Port </b></td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label"><b>I/O Buf </b></td>
+<td>17</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIBUF</td>
+<td>5</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOBUF</td>
+<td>8</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspTBUF</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspIOBUF</td>
+<td>3</td>
+</tr>
+<tr>
+<td class="label"><b>Register </b></td>
+<td>20652</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFSE</td>
+<td>43</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFRE</td>
+<td>1532</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFPE</td>
+<td>607</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspDFFCE</td>
+<td>18470</td>
+</tr>
+<tr>
+<td class="label"><b>LUT </b></td>
+<td>34195</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT2</td>
+<td>2847</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT3</td>
+<td>14175</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspLUT4</td>
+<td>17173</td>
+</tr>
+<tr>
+<td class="label"><b>ALU </b></td>
+<td>6354</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspALU</td>
+<td>6354</td>
+</tr>
+<tr>
+<td class="label"><b>INV </b></td>
+<td>76</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspINV</td>
+<td>76</td>
+</tr>
+<tr>
+<td class="label"><b>DSP </b></td>
+<td></td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMULTALU27X18</td>
+<td>48</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMULT12X12</td>
+<td>6</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspMULT27X36</td>
+<td>23</td>
+</tr>
+<tr>
+<td class="label"><b>BSRAM </b></td>
+<td>89</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspSDPB</td>
+<td>27</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbsppROM</td>
+<td>62</td>
+</tr>
+<tr>
+<td class="label"><b>CLOCK </b></td>
+<td>2</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspPLLA</td>
+<td>1</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp&nbsp&nbspOSCA</td>
+<td>1</td>
+</tr>
+</table>
+<h2><a name="utilization">Resource Utilization Summary</a></h2>
+<table class="summary_table">
+<tr>
+<td class="label"><b>Resource</b></td>
+<td><b>Usage</b></td>
+<td><b>Utilization</b></td>
+</tr>
+<tr>
+<td class="label">Logic</td>
+<td>40625(34271 LUT, 6354 ALU) / 59904</td>
+<td>68%</td>
+</tr>
+<tr>
+<td class="label">Register</td>
+<td>20652 / 60780</td>
+<td>34%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as Latch</td>
+<td>0 / 60780</td>
+<td>0%</td>
+</tr>
+<tr>
+<td class="label">&nbsp&nbsp--Register as FF</td>
+<td>20652 / 60780</td>
+<td>34%</td>
+</tr>
+<tr>
+<td class="label">BSRAM</td>
+<td>89 / 118</td>
+<td>76%</td>
+</tr>
+</table>
+<h1><a name="timing">Timing</a></h1>
+<h2><a name="clock">Clock Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Type</th>
+<th>Period</th>
+<th>Frequency(MHz)</th>
+<th>Rise</th>
+<th>Fall</th>
+<th>Source</th>
+<th>Master</th>
+<th>Object</th>
+</tr>
+<tr>
+<td>1</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+<td>Base</td>
+<td>19.048</td>
+<td>52.500</td>
+<td>0.000</td>
+<td>9.524</td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT </td>
+</tr>
+<tr>
+<td>2</td>
+<td>sys_clk</td>
+<td>Base</td>
+<td>20.000</td>
+<td>50.000</td>
+<td>0.000</td>
+<td>10.000</td>
+<td> </td>
+<td> </td>
+<td>sys_clk_ibuf/I </td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_usb_keyboard/u_pll/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>Generated</td>
+<td>83.333</td>
+<td>12.000</td>
+<td>0.000</td>
+<td>41.667</td>
+<td>sys_clk_ibuf/I</td>
+<td>sys_clk</td>
+<td>u_usb_keyboard/u_pll/u_pll/PLLA_inst/CLKOUT0 </td>
+</tr>
+</table>
+<h2><a name="performance">Max Frequency Summary:</a></h2>
+<table class="summary_table">
+<tr>
+<th>NO.</th>
+<th>Clock Name</th>
+<th>Constraint</th>
+<th>Actual Fmax</th>
+<th>Logic Level</th>
+<th>Entity</th>
+</tr>
+<tr>
+<td>1</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+<td>52.500(MHz)</td>
+<td>59.959(MHz)</td>
+<td>21</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>2</td>
+<td>sys_clk</td>
+<td>50.000(MHz)</td>
+<td>74.854(MHz)</td>
+<td>19</td>
+<td>TOP</td>
+</tr>
+<tr>
+<td>3</td>
+<td>u_usb_keyboard/u_pll/u_pll/PLLA_inst/CLKOUT0.default_gen_clk</td>
+<td>12.000(MHz)</td>
+<td>118.519(MHz)</td>
+<td>9</td>
+<td>TOP</td>
+</tr>
+</table>
+<h2><a name="detail timing">Detail Timing Paths Information</a></h2>
+<h3>Path&nbsp1</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.157</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>389.354</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/pending_rel_3_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>21</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3723_s1/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n3723_s1/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s5/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/hb_count_26_s5/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s9/I3</td>
+</tr>
+<tr>
+<td>384.742</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s9/F</td>
+</tr>
+<tr>
+<td>385.079</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s9/I3</td>
+</tr>
+<tr>
+<td>385.316</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/n2164_s9/F</td>
+</tr>
+<tr>
+<td>385.653</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s5/I3</td>
+</tr>
+<tr>
+<td>385.889</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s5/F</td>
+</tr>
+<tr>
+<td>386.227</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s6/I0</td>
+</tr>
+<tr>
+<td>386.701</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>14</td>
+<td>u_ble_audio/n2164_s6/F</td>
+</tr>
+<tr>
+<td>387.038</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s7/I2</td>
+</tr>
+<tr>
+<td>387.453</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_ble_audio/n2163_s7/F</td>
+</tr>
+<tr>
+<td>387.791</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2161_s3/I0</td>
+</tr>
+<tr>
+<td>388.264</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2161_s3/F</td>
+</tr>
+<tr>
+<td>388.602</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2161_s2/I2</td>
+</tr>
+<tr>
+<td>389.017</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2161_s2/F</td>
+</tr>
+<tr>
+<td>389.354</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_3_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_3_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/pending_rel_3_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_3_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.948, 43.780%; route: 4.725, 52.402%; tC2Q: 0.344, 3.818%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp2</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.157</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>389.354</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/pending_rel_8_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>21</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3723_s1/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n3723_s1/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s5/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/hb_count_26_s5/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s9/I3</td>
+</tr>
+<tr>
+<td>384.742</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s9/F</td>
+</tr>
+<tr>
+<td>385.079</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s9/I3</td>
+</tr>
+<tr>
+<td>385.316</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/n2164_s9/F</td>
+</tr>
+<tr>
+<td>385.653</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s5/I3</td>
+</tr>
+<tr>
+<td>385.889</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s5/F</td>
+</tr>
+<tr>
+<td>386.227</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s6/I0</td>
+</tr>
+<tr>
+<td>386.701</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>14</td>
+<td>u_ble_audio/n2164_s6/F</td>
+</tr>
+<tr>
+<td>387.038</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s7/I2</td>
+</tr>
+<tr>
+<td>387.453</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_ble_audio/n2163_s7/F</td>
+</tr>
+<tr>
+<td>387.791</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2156_s3/I0</td>
+</tr>
+<tr>
+<td>388.264</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2156_s3/F</td>
+</tr>
+<tr>
+<td>388.602</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2156_s2/I2</td>
+</tr>
+<tr>
+<td>389.017</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2156_s2/F</td>
+</tr>
+<tr>
+<td>389.354</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_8_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_8_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/pending_rel_8_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_8_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.948, 43.780%; route: 4.725, 52.402%; tC2Q: 0.344, 3.818%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp3</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-8.148</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>389.345</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/pending_rel_5_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>21</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3723_s1/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n3723_s1/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s5/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/hb_count_26_s5/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s9/I3</td>
+</tr>
+<tr>
+<td>384.742</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s9/F</td>
+</tr>
+<tr>
+<td>385.079</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s9/I3</td>
+</tr>
+<tr>
+<td>385.316</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/n2164_s9/F</td>
+</tr>
+<tr>
+<td>385.653</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s5/I3</td>
+</tr>
+<tr>
+<td>385.889</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s5/F</td>
+</tr>
+<tr>
+<td>386.227</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s6/I0</td>
+</tr>
+<tr>
+<td>386.701</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>14</td>
+<td>u_ble_audio/n2164_s6/F</td>
+</tr>
+<tr>
+<td>387.038</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s7/I2</td>
+</tr>
+<tr>
+<td>387.453</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_ble_audio/n2163_s7/F</td>
+</tr>
+<tr>
+<td>387.791</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2159_s3/I1</td>
+</tr>
+<tr>
+<td>388.255</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2159_s3/F</td>
+</tr>
+<tr>
+<td>388.593</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2159_s2/I2</td>
+</tr>
+<tr>
+<td>389.008</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2159_s2/F</td>
+</tr>
+<tr>
+<td>389.345</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_5_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_5_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/pending_rel_5_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_5_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.939, 43.724%; route: 4.725, 52.454%; tC2Q: 0.344, 3.822%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp4</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.978</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>389.176</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/pending_rel_1_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[16]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>21</td>
+<td>u_ble_fifo/mem_RAMOUT_240_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3723_s1/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n3723_s1/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s5/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/hb_count_26_s5/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s9/I3</td>
+</tr>
+<tr>
+<td>384.742</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s9/F</td>
+</tr>
+<tr>
+<td>385.079</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s9/I3</td>
+</tr>
+<tr>
+<td>385.316</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>2</td>
+<td>u_ble_audio/n2164_s9/F</td>
+</tr>
+<tr>
+<td>385.653</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2318_s5/I3</td>
+</tr>
+<tr>
+<td>385.889</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/n2318_s5/F</td>
+</tr>
+<tr>
+<td>386.227</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2164_s6/I0</td>
+</tr>
+<tr>
+<td>386.701</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>14</td>
+<td>u_ble_audio/n2164_s6/F</td>
+</tr>
+<tr>
+<td>387.038</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s7/I2</td>
+</tr>
+<tr>
+<td>387.453</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>4</td>
+<td>u_ble_audio/n2163_s7/F</td>
+</tr>
+<tr>
+<td>387.791</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s4/I0</td>
+</tr>
+<tr>
+<td>388.264</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s4/F</td>
+</tr>
+<tr>
+<td>388.602</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s2/I3</td>
+</tr>
+<tr>
+<td>388.838</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2163_s2/F</td>
+</tr>
+<tr>
+<td>389.176</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_1_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_1_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/pending_rel_1_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/pending_rel_1_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>12</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.769, 42.643%; route: 4.725, 53.462%; tC2Q: 0.344, 3.895%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp5</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_1_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2731_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2731_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_1_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_1_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_1_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_1_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp6</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_3_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2729_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2729_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_3_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_3_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_3_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_3_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp7</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_4_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2728_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2728_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_4_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_4_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_4_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_4_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp8</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_6_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2726_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2726_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_6_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_6_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_6_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_6_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp9</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_8_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2724_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2724_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_8_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_8_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_8_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_8_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp10</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_9_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2723_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2723_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_9_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_9_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_9_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_9_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp11</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_10_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2722_s4/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2722_s4/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_10_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_10_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_10_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_10_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp12</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_12_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2720_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2720_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_12_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_12_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_12_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_12_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp13</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_13_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2719_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2719_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_13_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_13_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_13_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_13_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp14</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_15_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2717_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2717_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_15_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_15_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_15_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_15_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp15</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_16_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2716_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2716_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_16_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_16_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_16_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_16_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp16</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_18_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2714_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2714_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_18_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_18_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_18_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_18_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp17</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_19_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2713_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2713_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_19_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_19_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_19_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_19_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp18</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_21_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2711_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2711_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_21_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_21_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_21_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_21_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp19</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_22_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2710_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2710_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_22_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_22_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_22_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_22_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp20</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_24_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2708_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2708_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_24_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_24_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_24_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_24_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp21</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.762</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.960</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_25_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2707_s2/I0</td>
+</tr>
+<tr>
+<td>388.622</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2707_s2/F</td>
+</tr>
+<tr>
+<td>388.960</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_25_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_25_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_25_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_25_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.890, 45.120%; route: 4.388, 50.887%; tC2Q: 0.344, 3.993%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp22</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.753</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.951</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_0_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2732_s2/I1</td>
+</tr>
+<tr>
+<td>388.613</td>
+<td>0.465</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2732_s2/F</td>
+</tr>
+<tr>
+<td>388.951</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_0_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_0_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_0_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_0_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.881, 45.063%; route: 4.388, 50.940%; tC2Q: 0.344, 3.997%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp23</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.704</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.901</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_2_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2730_s2/I2</td>
+</tr>
+<tr>
+<td>388.564</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2730_s2/F</td>
+</tr>
+<tr>
+<td>388.901</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_2_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_2_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_2_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_2_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.832, 44.745%; route: 4.388, 51.235%; tC2Q: 0.344, 4.020%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp24</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.704</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.901</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_5_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2727_s2/I2</td>
+</tr>
+<tr>
+<td>388.564</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2727_s2/F</td>
+</tr>
+<tr>
+<td>388.901</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_5_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_5_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_5_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_5_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.832, 44.745%; route: 4.388, 51.235%; tC2Q: 0.344, 4.020%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+<h3>Path&nbsp25</h3>
+<b>Path Summary:</b></br>
+<table class="summary_table">
+<tr>
+<td class="label">Slack</td>
+<td>-7.704</td>
+</tr>
+<tr>
+<td class="label">Data Arrival Time</td>
+<td>388.901</td>
+</tr>
+<tr>
+<td class="label">Data Required Time</td>
+<td>381.197</td>
+</tr>
+<tr>
+<td class="label">From</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0</td>
+</tr>
+<tr>
+<td class="label">To</td>
+<td>u_ble_audio/hb_count_7_s1</td>
+</tr>
+<tr>
+<td class="label">Launch Clk</td>
+<td>sys_clk[R]</td>
+</tr>
+<tr>
+<td class="label">Latch Clk</td>
+<td>u_osc/osc_inst/OSCOUT.default_clk[R]</td>
+</tr>
+</table>
+<b>Data Arrival Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.000</td>
+<td>380.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>sys_clk</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>1</td>
+<td>sys_clk_ibuf/I</td>
+</tr>
+<tr>
+<td>380.000</td>
+<td>0.000</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1533</td>
+<td>sys_clk_ibuf/O</td>
+</tr>
+<tr>
+<td>380.337</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/CLK</td>
+</tr>
+<tr>
+<td>380.682</td>
+<td>0.344</td>
+<td>tC2Q</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_mem_RAMREG_7_G[21]_s0/Q</td>
+</tr>
+<tr>
+<td>381.019</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/I0</td>
+</tr>
+<tr>
+<td>381.493</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s14/F</td>
+</tr>
+<tr>
+<td>381.830</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/I1</td>
+</tr>
+<tr>
+<td>381.953</td>
+<td>0.123</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s6/O</td>
+</tr>
+<tr>
+<td>382.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/I1</td>
+</tr>
+<tr>
+<td>382.368</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s2/O</td>
+</tr>
+<tr>
+<td>382.706</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/I1</td>
+</tr>
+<tr>
+<td>382.783</td>
+<td>0.078</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_fifo/mem_RAMOUT_315_G[0]_s0/O</td>
+</tr>
+<tr>
+<td>383.121</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n3700_s3/I0</td>
+</tr>
+<tr>
+<td>383.594</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n3700_s3/F</td>
+</tr>
+<tr>
+<td>383.932</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2364_s2/I3</td>
+</tr>
+<tr>
+<td>384.168</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>6</td>
+<td>u_ble_audio/n2364_s2/F</td>
+</tr>
+<tr>
+<td>384.506</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/ble_slide_time_4_s5/I2</td>
+</tr>
+<tr>
+<td>384.921</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>11</td>
+<td>u_ble_audio/ble_slide_time_4_s5/F</td>
+</tr>
+<tr>
+<td>385.258</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_26_s4/I2</td>
+</tr>
+<tr>
+<td>385.673</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>3</td>
+<td>u_ble_audio/hb_count_26_s4/F</td>
+</tr>
+<tr>
+<td>386.011</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/I0</td>
+</tr>
+<tr>
+<td>386.484</td>
+<td>0.474</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s4/F</td>
+</tr>
+<tr>
+<td>386.822</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2392_s2/I3</td>
+</tr>
+<tr>
+<td>387.058</td>
+<td>0.236</td>
+<td>tINS</td>
+<td>RR</td>
+<td>57</td>
+<td>u_ble_audio/n2392_s2/F</td>
+</tr>
+<tr>
+<td>387.396</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_seen_s4/I2</td>
+</tr>
+<tr>
+<td>387.811</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>28</td>
+<td>u_ble_audio/hb_seen_s4/F</td>
+</tr>
+<tr>
+<td>388.148</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2725_s2/I2</td>
+</tr>
+<tr>
+<td>388.564</td>
+<td>0.415</td>
+<td>tINS</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/n2725_s2/F</td>
+</tr>
+<tr>
+<td>388.901</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_7_s1/D</td>
+</tr>
+</table>
+<b>Data Required Path:</b>
+<table class="summary_table">
+<tr>
+<th>AT</th>
+<th>DELAY</th>
+<th>TYPE</th>
+<th>RF</th>
+<th>FANOUT</th>
+<th>NODE</th>
+</tr>
+<tr>
+<td>380.952</td>
+<td>380.952</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>active clock edge time</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>u_osc/osc_inst/OSCOUT.default_clk</td>
+</tr>
+<tr>
+<td>380.952</td>
+<td>0.000</td>
+<td>tCL</td>
+<td>RR</td>
+<td>18888</td>
+<td>u_osc/osc_inst/OSCOUT</td>
+</tr>
+<tr>
+<td>381.290</td>
+<td>0.337</td>
+<td>tNET</td>
+<td>RR</td>
+<td>1</td>
+<td>u_ble_audio/hb_count_7_s1/CLK</td>
+</tr>
+<tr>
+<td>381.255</td>
+<td>-0.035</td>
+<td>tUnc</td>
+<td> </td>
+<td> </td>
+<td>u_ble_audio/hb_count_7_s1</td>
+</tr>
+<tr>
+<td>381.198</td>
+<td>-0.057</td>
+<td>tSu</td>
+<td> </td>
+<td>1</td>
+<td>u_ble_audio/hb_count_7_s1</td>
+</tr>
+</table>
+<b>Path Statistics:</b>
+<table class="summary_table">
+<tr>
+<td class="label">Clock Skew:</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td class="label">Setup Relationship:</td>
+<td>0.952</td>
+</tr>
+<tr>
+<td class="label">Logic Level:</td>
+<td>11</td>
+</tr>
+<tr>
+<td class="label">Arrival Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+<tr>
+<td class="label">Arrival Data Path Delay:</td><td> cell: 3.832, 44.745%; route: 4.388, 51.235%; tC2Q: 0.344, 4.020%</td></tr>
+<tr>
+<td class="label">Required Clock Path Delay:</td><td> cell: 0.000, 0.000%; route: 0.337, 100.000%</td></tr>
+</table>
+<br/>
+</div><!-- content -->
+</div><!-- main_wrapper -->
+</body>
+</html>
